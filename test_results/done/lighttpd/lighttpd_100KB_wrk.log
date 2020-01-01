@@ -1,0 +1,738 @@
+how many requests can you serve in 5 minutes?
+1 concurrent
+interation: 1
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   185.95us  151.29us  10.20ms   98.46%
+    Req/Sec     5.54k   185.96     6.41k    82.23%
+  1654981 requests in 5.00m, 158.22GB read
+Requests/sec:   5516.53
+Transfer/sec:    540.06MB
+interation: 2
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   187.39us  282.32us  37.58ms   99.62%
+    Req/Sec     5.56k   157.32     6.28k    80.51%
+  1660327 requests in 5.00m, 158.73GB read
+Requests/sec:   5532.57
+Transfer/sec:    541.63MB
+interation: 3
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   182.70us  132.44us   8.90ms   98.48%
+    Req/Sec     5.59k   191.41     6.33k    75.97%
+  1669067 requests in 5.00m, 159.57GB read
+Requests/sec:   5563.54
+Transfer/sec:    544.66MB
+interation: 4
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   186.18us  140.32us   7.97ms   98.44%
+    Req/Sec     5.51k   220.29     6.37k    77.57%
+  1645769 requests in 5.00m, 157.34GB read
+Requests/sec:   5485.86
+Transfer/sec:    537.06MB
+interation: 5
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   186.31us  143.05us   8.70ms   98.44%
+    Req/Sec     5.51k   181.61     6.42k    80.10%
+  1644593 requests in 5.00m, 157.23GB read
+Requests/sec:   5481.89
+Transfer/sec:    536.67MB
+2 concurrent
+interation: 1
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   241.03us  153.78us   7.66ms   97.83%
+    Req/Sec     4.24k   206.40     5.24k    84.95%
+  2533838 requests in 5.00m, 242.25GB read
+Requests/sec:   8446.07
+Transfer/sec:    826.86MB
+interation: 2
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   247.13us  152.42us   8.92ms   97.56%
+    Req/Sec     4.13k   145.52     5.23k    81.46%
+  2466253 requests in 5.00m, 235.78GB read
+Requests/sec:   8218.10
+Transfer/sec:    804.54MB
+interation: 3
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   250.13us  275.61us  34.79ms   99.31%
+    Req/Sec     4.14k   176.75     5.10k    87.65%
+  2470517 requests in 5.00m, 236.19GB read
+Requests/sec:   8234.99
+Transfer/sec:    806.19MB
+interation: 4
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   248.92us  172.04us  12.20ms   98.02%
+    Req/Sec     4.12k   189.60     5.21k    86.33%
+  2462072 requests in 5.00m, 235.38GB read
+Requests/sec:   8206.87
+Transfer/sec:    803.44MB
+interation: 5
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   246.95us  162.41us  10.56ms   97.89%
+    Req/Sec     4.14k    96.91     4.45k    75.37%
+  2474353 requests in 5.00m, 236.56GB read
+Requests/sec:   8245.09
+Transfer/sec:    807.18MB
+4 concurrent
+interation: 1
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   369.04us  198.12us   9.36ms   96.50%
+    Req/Sec     5.53k   154.58     5.89k    75.28%
+  3300518 requests in 5.00m, 315.54GB read
+Requests/sec:  11001.51
+Transfer/sec:      1.05GB
+interation: 2
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   369.77us  185.41us   9.31ms   95.68%
+    Req/Sec     5.51k   162.11     6.00k    73.18%
+  3287687 requests in 5.00m, 314.32GB read
+Requests/sec:  10958.82
+Transfer/sec:      1.05GB
+interation: 3
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   366.04us  189.83us   8.94ms   96.09%
+    Req/Sec     5.57k   142.73     5.93k    76.28%
+  3325897 requests in 5.00m, 317.97GB read
+Requests/sec:  11086.11
+Transfer/sec:      1.06GB
+interation: 4
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   374.46us  336.84us  34.24ms   98.59%
+    Req/Sec     5.54k   244.41     5.95k    91.52%
+  3307244 requests in 5.00m, 316.19GB read
+Requests/sec:  11024.08
+Transfer/sec:      1.05GB
+interation: 5
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   366.14us  190.98us  11.75ms   96.58%
+    Req/Sec     5.57k   169.48     6.05k    72.15%
+  3323976 requests in 5.00m, 317.79GB read
+Requests/sec:  11079.74
+Transfer/sec:      1.06GB
+8 concurrent
+interation: 1
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   652.26us  260.75us   9.98ms   92.58%
+    Req/Sec     6.21k   192.95     6.75k    69.44%
+  3710725 requests in 5.00m, 354.76GB read
+Requests/sec:  12364.97
+Transfer/sec:      1.18GB
+interation: 2
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   647.15us  255.48us  10.27ms   92.67%
+    Req/Sec     6.26k   177.01     6.75k    73.08%
+  3736676 requests in 5.00m, 357.24GB read
+Requests/sec:  12455.53
+Transfer/sec:      1.19GB
+interation: 3
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   652.22us  252.49us   9.94ms   91.97%
+    Req/Sec     6.21k   165.13     6.65k    73.36%
+  3706324 requests in 5.00m, 354.34GB read
+Requests/sec:  12350.31
+Transfer/sec:      1.18GB
+interation: 4
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   653.48us  281.37us  10.54ms   93.03%
+    Req/Sec     6.22k   192.25    11.21k    77.59%
+  3712779 requests in 5.00m, 354.96GB read
+Requests/sec:  12371.80
+Transfer/sec:      1.18GB
+interation: 5
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   657.05us  344.60us  35.61ms   95.13%
+    Req/Sec     6.19k   184.56     6.78k    79.23%
+  3697423 requests in 5.00m, 353.49GB read
+Requests/sec:  12324.55
+Transfer/sec:      1.18GB
+16 concurrent
+interation: 1
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.20ms  392.87us  12.03ms   89.24%
+    Req/Sec     6.70k   175.23     7.28k    77.48%
+  4001745 requests in 5.00m, 382.58GB read
+Requests/sec:  13339.00
+Transfer/sec:      1.28GB
+interation: 2
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.21ms  423.62us  12.84ms   89.66%
+    Req/Sec     6.66k   197.16     7.45k    74.55%
+  3975469 requests in 5.00m, 380.07GB read
+Requests/sec:  13251.25
+Transfer/sec:      1.27GB
+interation: 3
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.21ms  421.28us  11.66ms   89.78%
+    Req/Sec     6.67k   203.80     7.30k    74.63%
+  3979892 requests in 5.00m, 380.49GB read
+Requests/sec:  13266.21
+Transfer/sec:      1.27GB
+interation: 4
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.21ms  406.81us  12.07ms   89.51%
+    Req/Sec     6.64k   204.83     7.43k    72.87%
+  3966155 requests in 5.00m, 379.18GB read
+Requests/sec:  13220.17
+Transfer/sec:      1.26GB
+interation: 5
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.21ms  423.35us  11.63ms   89.62%
+    Req/Sec     6.66k   217.59    11.88k    77.10%
+  3974912 requests in 5.00m, 380.02GB read
+Requests/sec:  13245.29
+Transfer/sec:      1.27GB
+32 concurrent
+interation: 1
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.38ms  832.42us  39.13ms   88.37%
+    Req/Sec     6.80k   334.26     7.95k    70.56%
+  4061075 requests in 5.00m, 388.26GB read
+Requests/sec:  13532.41
+Transfer/sec:      1.29GB
+interation: 2
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.41ms  823.70us  17.14ms   88.16%
+    Req/Sec     6.71k   326.86     7.84k    68.67%
+  4005543 requests in 5.00m, 382.95GB read
+Requests/sec:  13351.56
+Transfer/sec:      1.28GB
+interation: 3
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.33ms  793.09us  16.22ms   87.57%
+    Req/Sec     6.93k   304.26     7.90k    75.05%
+  4139875 requests in 5.00m, 395.79GB read
+Requests/sec:  13799.56
+Transfer/sec:      1.32GB
+interation: 4
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.37ms  796.04us  19.57ms   88.02%
+    Req/Sec     6.82k   283.13     7.90k    75.20%
+  4072139 requests in 5.00m, 389.31GB read
+Requests/sec:  13573.68
+Transfer/sec:      1.30GB
+interation: 5
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.40ms  812.82us  16.17ms   88.15%
+    Req/Sec     6.72k   307.91    12.58k    77.02%
+  4010767 requests in 5.00m, 383.45GB read
+Requests/sec:  13364.76
+Transfer/sec:      1.28GB
+64 concurrent
+interation: 1
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.61ms    1.87ms  37.03ms   92.30%
+    Req/Sec     4.88k   334.90     6.13k    76.92%
+  2913476 requests in 5.00m, 278.54GB read
+Requests/sec:   9711.52
+Transfer/sec:      0.93GB
+interation: 2
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.50ms    1.61ms  42.86ms   91.06%
+    Req/Sec     4.95k   288.99     6.48k    78.65%
+  2957098 requests in 5.00m, 282.71GB read
+Requests/sec:   9856.90
+Transfer/sec:      0.94GB
+interation: 3
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.51ms    1.86ms  33.03ms   92.88%
+    Req/Sec     4.96k   335.15     6.30k    75.03%
+  2962712 requests in 5.00m, 283.25GB read
+Requests/sec:   9875.69
+Transfer/sec:      0.94GB
+interation: 4
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.40ms    1.54ms  37.38ms   90.23%
+    Req/Sec     5.02k   364.98     6.74k    76.80%
+  2997917 requests in 5.00m, 286.61GB read
+Requests/sec:   9992.92
+Transfer/sec:      0.96GB
+interation: 5
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.55ms    1.94ms  34.01ms   92.96%
+    Req/Sec     4.94k   333.31     6.51k    79.95%
+  2946997 requests in 5.00m, 281.75GB read
+Requests/sec:   9823.30
+Transfer/sec:      0.94GB
+128 concurrent
+interation: 1
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    20.68ms   15.11ms 577.79ms   96.86%
+    Req/Sec     3.28k   562.48     5.15k    69.92%
+  1956519 requests in 5.00m, 187.06GB read
+Requests/sec:   6520.49
+Transfer/sec:    638.36MB
+interation: 2
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.50ms   13.18ms 566.06ms   97.36%
+    Req/Sec     3.64k   702.95     5.37k    63.22%
+  2171017 requests in 5.00m, 207.56GB read
+Requests/sec:   7235.61
+Transfer/sec:    708.37MB
+interation: 3
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    20.88ms   16.44ms 809.25ms   96.77%
+    Req/Sec     3.27k   606.14     5.41k    71.98%
+  1955225 requests in 5.00m, 186.93GB read
+Requests/sec:   6516.14
+Transfer/sec:    637.93MB
+interation: 4
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    20.53ms   15.94ms 770.61ms   97.14%
+    Req/Sec     3.31k   560.19     5.18k    69.28%
+  1978196 requests in 5.00m, 189.13GB read
+Requests/sec:   6592.67
+Transfer/sec:    645.43MB
+interation: 5
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    18.91ms   13.78ms 464.94ms   97.37%
+    Req/Sec     3.57k   669.71     5.23k    64.07%
+  2130113 requests in 5.00m, 203.65GB read
+Requests/sec:   7099.43
+Transfer/sec:    695.03MB
+256 concurrent
+interation: 1
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    59.48ms   27.58ms 867.42ms   87.40%
+    Req/Sec     2.21k   427.98     3.27k    61.13%
+  1322631 requests in 5.00m, 126.46GB read
+Requests/sec:   4407.60
+Transfer/sec:    431.54MB
+interation: 2
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    61.46ms   28.37ms 723.26ms   86.55%
+    Req/Sec     2.14k   458.04     3.41k    58.00%
+  1275795 requests in 5.00m, 121.98GB read
+Requests/sec:   4251.58
+Transfer/sec:    416.26MB
+interation: 3
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    61.94ms   28.41ms 763.11ms   86.99%
+    Req/Sec     2.12k   452.55     3.33k    60.92%
+  1267011 requests in 5.00m, 121.14GB read
+Requests/sec:   4222.17
+Transfer/sec:    413.39MB
+interation: 4
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    63.91ms   31.78ms 834.61ms   88.06%
+    Req/Sec     2.07k   526.72     3.28k    60.33%
+  1234353 requests in 5.00m, 118.02GB read
+Requests/sec:   4113.35
+Transfer/sec:    402.73MB
+interation: 5
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    62.92ms   30.43ms 928.12ms   87.26%
+    Req/Sec     2.09k   506.87     3.34k    62.17%
+  1249863 requests in 5.00m, 119.50GB read
+Requests/sec:   4165.15
+Transfer/sec:    407.79MB
+512 concurrent
+interation: 1
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   226.54ms   98.30ms   1.86s    81.27%
+    Req/Sec     1.15k   175.01     1.98k    72.98%
+  688742 requests in 5.00m, 65.87GB read
+Requests/sec:   2295.05
+Transfer/sec:    224.76MB
+interation: 2
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   223.09ms   98.44ms   1.96s    81.94%
+    Req/Sec     1.17k   159.64     1.86k    70.95%
+  700006 requests in 5.00m, 66.95GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1
+Requests/sec:   2333.25
+Transfer/sec:    228.50MB
+interation: 3
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   226.83ms   98.54ms   1.48s    81.55%
+    Req/Sec     1.15k   195.65     1.91k    72.82%
+  687854 requests in 5.00m, 65.79GB read
+Requests/sec:   2292.09
+Transfer/sec:    224.48MB
+interation: 4
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   221.00ms   98.07ms   1.90s    81.66%
+    Req/Sec     1.18k   194.39     2.18k    73.40%
+  706753 requests in 5.00m, 67.59GB read
+  Socket errors: connect 0, read 0, write 0, timeout 4
+Requests/sec:   2355.17
+Transfer/sec:    230.65MB
+interation: 5
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   218.64ms   97.77ms   1.98s    82.14%
+    Req/Sec     1.20k   186.66     2.16k    73.50%
+  714991 requests in 5.00m, 68.38GB read
+  Socket errors: connect 0, read 0, write 0, timeout 6
+Requests/sec:   2383.28
+Transfer/sec:    233.40MB
+512 concurrent
+interation: 1
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   221.22ms   97.67ms   1.82s    82.40%
+    Req/Sec     1.18k   176.19     1.88k    69.37%
+  705951 requests in 5.00m, 67.51GB read
+  Socket errors: connect 0, read 0, write 0, timeout 3
+Requests/sec:   2352.39
+Transfer/sec:    230.37MB
+interation: 2
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   225.02ms  100.06ms   2.00s    82.44%
+    Req/Sec     1.16k   182.61     2.08k    69.40%
+  694306 requests in 5.00m, 66.40GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1
+Requests/sec:   2313.78
+Transfer/sec:    226.60MB
+interation: 3
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   225.81ms   98.06ms   1.96s    81.74%
+    Req/Sec     1.16k   185.98     2.22k    77.14%
+  691233 requests in 5.00m, 66.11GB read
+  Socket errors: connect 0, read 0, write 0, timeout 2
+Requests/sec:   2303.36
+Transfer/sec:    225.58MB
+interation: 4
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   218.58ms   97.37ms   1.99s    82.13%
+    Req/Sec     1.20k   210.44     2.05k    72.84%
+  714866 requests in 5.00m, 68.37GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1
+Requests/sec:   2382.11
+Transfer/sec:    233.28MB
+interation: 5
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   222.59ms   98.08ms   1.90s    81.61%
+    Req/Sec     1.17k   186.97     2.03k    72.39%
+  701336 requests in 5.00m, 67.07GB read
+  Socket errors: connect 0, read 0, write 0, timeout 2
+Requests/sec:   2337.15
+Transfer/sec:    228.87MB
+1024 concurrent
+interation: 1
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   649.59ms  211.99ms   2.00s    88.73%
+    Req/Sec   792.38    118.43     2.29k    72.64%
+  473091 requests in 5.00m, 45.28GB read
+  Socket errors: connect 0, read 1, write 0, timeout 1344
+Requests/sec:   1576.60
+Transfer/sec:    154.52MB
+interation: 2
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   653.70ms  209.72ms   2.00s    88.22%
+    Req/Sec   786.77    115.52     2.41k    72.02%
+  469538 requests in 5.00m, 44.94GB read
+  Socket errors: connect 0, read 1, write 0, timeout 1403
+Requests/sec:   1564.80
+Transfer/sec:    153.36MB
+interation: 3
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   667.47ms  213.08ms   2.00s    87.46%
+    Req/Sec   769.59    112.94     2.22k    73.54%
+  459374 requests in 5.00m, 43.97GB read
+  Socket errors: connect 0, read 8, write 0, timeout 1519
+Requests/sec:   1530.96
+Transfer/sec:    150.04MB
+interation: 4
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   649.75ms  211.14ms   2.00s    88.28%
+    Req/Sec   791.64    114.81     2.16k    71.25%
+  472593 requests in 5.00m, 45.23GB read
+  Socket errors: connect 0, read 2, write 0, timeout 1344
+Requests/sec:   1574.99
+Transfer/sec:    154.35MB
+interation: 5
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   647.82ms  206.90ms   2.00s    88.17%
+    Req/Sec   794.44    103.52     2.14k    69.88%
+  474195 requests in 5.00m, 45.38GB read
+  Socket errors: connect 0, read 1, write 0, timeout 1258
+Requests/sec:   1580.37
+Transfer/sec:    154.88MB
+2048 concurrent
+interation: 1
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.17s   402.14ms   2.00s    55.47%
+    Req/Sec   677.02     87.27     1.04k    70.39%
+  403905 requests in 5.00m, 38.71GB read
+  Socket errors: connect 0, read 1103, write 0, timeout 91318
+Requests/sec:   1346.01
+Transfer/sec:    132.10MB
+interation: 2
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.17s   401.86ms   2.00s    55.35%
+    Req/Sec   674.15     87.48     1.21k    69.24%
+  402306 requests in 5.00m, 38.56GB read
+  Socket errors: connect 0, read 1107, write 0, timeout 91986
+Requests/sec:   1340.64
+Transfer/sec:    131.58MB
+interation: 3
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.17s   402.14ms   2.00s    55.27%
+    Req/Sec   674.38     86.62     1.41k    70.30%
+  402410 requests in 5.00m, 38.57GB read
+  Socket errors: connect 0, read 1111, write 0, timeout 91797
+Requests/sec:   1341.01
+Transfer/sec:    131.62MB
+interation: 4
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.16s   405.53ms   2.00s    55.84%
+    Req/Sec   686.17     95.07     1.88k    71.10%
+  409437 requests in 5.00m, 39.24GB read
+  Socket errors: connect 0, read 1057, write 0, timeout 89706
+Requests/sec:   1364.40
+Transfer/sec:    133.90MB
+interation: 5
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.18s   399.63ms   2.00s    55.31%
+    Req/Sec   663.73     85.67     1.35k    69.73%
+  395987 requests in 5.00m, 37.95GB read
+  Socket errors: connect 0, read 1174, write 0, timeout 93990
+Requests/sec:   1319.61
+Transfer/sec:    129.52MB
+4096 concurrent
+interation: 1
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.47s   357.28ms   2.00s    60.97%
+    Req/Sec   642.41     89.78     1.03k    71.39%
+  383101 requests in 5.00m, 36.82GB read
+  Socket errors: connect 0, read 28608, write 0, timeout 289552
+Requests/sec:   1276.60
+Transfer/sec:    125.64MB
+interation: 2
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.48s   349.12ms   2.00s    61.06%
+    Req/Sec   631.03     85.11     0.92k    68.76%
+  376269 requests in 5.00m, 36.16GB read
+  Socket errors: connect 0, read 29978, write 0, timeout 289582
+Requests/sec:   1253.82
+Transfer/sec:    123.40MB
+interation: 3
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.48s   350.03ms   2.00s    60.90%
+    Req/Sec   634.48     85.09     0.97k    71.25%
+  378311 requests in 5.00m, 36.36GB read
+  Socket errors: connect 0, read 29221, write 0, timeout 289831
+Requests/sec:   1260.68
+Transfer/sec:    124.09MB
+interation: 4
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.48s   349.78ms   2.00s    60.99%
+    Req/Sec   631.74     83.71     0.98k    69.83%
+  376677 requests in 5.00m, 36.21GB read
+  Socket errors: connect 0, read 29531, write 0, timeout 289504
+Requests/sec:   1255.48
+Transfer/sec:    123.58MB
+interation: 5
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/js/100KB.js
+Running 5m test @ http://10.1.0.9:80/js/100KB.js
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.48s   350.94ms   2.00s    60.96%
+    Req/Sec   634.63     82.82     1.01k    70.98%
+  378455 requests in 5.00m, 36.37GB read
+  Socket errors: connect 0, read 29325, write 0, timeout 289866
+Requests/sec:   1261.09
+Transfer/sec:    124.11MB

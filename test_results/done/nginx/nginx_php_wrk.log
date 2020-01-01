@@ -1,0 +1,753 @@
+how many requests can you serve in 5 minutes?
+1 concurrent
+interation: 1
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   158.80us  261.64us  33.24ms   99.65%
+    Req/Sec     6.65k   264.91     7.23k    72.50%
+  1986307 requests in 5.00m, 399.70MB read
+Requests/sec:   6620.99
+Transfer/sec:      1.33MB
+interation: 2
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   160.96us  148.12us   8.79ms   99.59%
+    Req/Sec     6.47k   185.80     6.97k    70.08%
+  1930835 requests in 5.00m, 388.53MB read
+Requests/sec:   6433.97
+Transfer/sec:      1.29MB
+interation: 3
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   159.89us  130.00us   7.11ms   99.59%
+    Req/Sec     6.47k   168.22     7.10k    72.70%
+  1930596 requests in 5.00m, 388.48MB read
+Requests/sec:   6435.31
+Transfer/sec:      1.29MB
+interation: 4
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   157.64us  158.38us   8.80ms   99.53%
+    Req/Sec     6.65k   207.48     7.20k    71.67%
+  1985869 requests in 5.00m, 399.61MB read
+Requests/sec:   6619.45
+Transfer/sec:      1.33MB
+interation: 5
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   163.47us  165.51us   9.19ms   99.51%
+    Req/Sec     6.43k   202.07     7.22k    77.97%
+  1919899 requests in 5.00m, 386.33MB read
+Requests/sec:   6397.54
+Transfer/sec:      1.29MB
+2 concurrent
+interation: 1
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   211.16us  149.10us   8.86ms   99.53%
+    Req/Sec     4.88k   124.82     6.96k    76.52%
+  2911735 requests in 5.00m, 585.91MB read
+Requests/sec:   9702.57
+Transfer/sec:      1.95MB
+interation: 2
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   212.26us  260.06us  34.68ms   99.62%
+    Req/Sec     4.90k   141.21     5.32k    80.25%
+  2922506 requests in 5.00m, 588.08MB read
+Requests/sec:   9741.65
+Transfer/sec:      1.96MB
+interation: 3
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   211.94us  155.68us   8.67ms   99.51%
+    Req/Sec     4.87k   118.19     5.16k    75.16%
+  2910466 requests in 5.00m, 585.66MB read
+Requests/sec:   9698.33
+Transfer/sec:      1.95MB
+interation: 4
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   213.32us  167.48us   8.87ms   99.47%
+    Req/Sec     4.86k   145.68     6.79k    70.69%
+  2900831 requests in 5.00m, 583.72MB read
+Requests/sec:   9666.24
+Transfer/sec:      1.95MB
+interation: 5
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   213.37us  158.63us   9.57ms   99.51%
+    Req/Sec     4.84k   118.00     5.23k    74.67%
+  2890099 requests in 5.00m, 581.56MB read
+Requests/sec:   9633.60
+Transfer/sec:      1.94MB
+4 concurrent
+interation: 1
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   330.26us  145.84us   9.57ms   99.15%
+    Req/Sec     6.15k   214.12     9.69k    72.90%
+  3670037 requests in 5.00m, 738.50MB read
+Requests/sec:  12229.40
+Transfer/sec:      2.46MB
+interation: 2
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   335.63us  177.86us  11.77ms   99.42%
+    Req/Sec     6.08k   179.61     6.89k    71.73%
+  3628743 requests in 5.00m, 730.19MB read
+Requests/sec:  12095.77
+Transfer/sec:      2.43MB
+interation: 3
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   335.51us  272.77us  32.80ms   99.53%
+    Req/Sec     6.12k   218.33     6.76k    74.48%
+  3656418 requests in 5.00m, 735.76MB read
+Requests/sec:  12188.02
+Transfer/sec:      2.45MB
+interation: 4
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   324.70us  137.10us   7.96ms   99.30%
+    Req/Sec     6.25k   203.06     6.92k    68.67%
+  3730883 requests in 5.00m, 750.75MB read
+Requests/sec:  12436.24
+Transfer/sec:      2.50MB
+interation: 5
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   335.13us  213.98us   9.24ms   99.40%
+    Req/Sec     6.14k   243.88     9.83k    69.79%
+  3665306 requests in 5.00m, 737.55MB read
+Requests/sec:  12213.63
+Transfer/sec:      2.46MB
+8 concurrent
+interation: 1
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   592.79us  230.45us  11.48ms   99.36%
+    Req/Sec     6.86k   155.30     7.25k    80.78%
+  4092995 requests in 5.00m, 823.61MB read
+Requests/sec:  13643.22
+Transfer/sec:      2.75MB
+interation: 2
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   592.73us  213.29us  12.45ms   98.88%
+    Req/Sec     6.84k   147.77     7.28k    81.02%
+  4084736 requests in 5.00m, 821.95MB read
+Requests/sec:  13615.76
+Transfer/sec:      2.74MB
+interation: 3
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   595.86us  148.36us   9.28ms   94.52%
+    Req/Sec     6.76k   141.00     7.14k    73.60%
+  4034419 requests in 5.00m, 811.83MB read
+Requests/sec:  13448.00
+Transfer/sec:      2.71MB
+interation: 4
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   603.00us  216.49us  24.49ms   98.94%
+    Req/Sec     6.70k   164.58    12.45k    88.19%
+  4003112 requests in 5.00m, 805.53MB read
+Requests/sec:  13339.28
+Transfer/sec:      2.68MB
+interation: 5
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   602.25us  190.18us   9.70ms   97.69%
+    Req/Sec     6.71k   149.61     7.24k    78.19%
+  4008810 requests in 5.00m, 806.67MB read
+Requests/sec:  13358.24
+Transfer/sec:      2.69MB
+16 concurrent
+interation: 1
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.11ms  198.23us   9.73ms   92.69%
+    Req/Sec     7.25k   154.71     7.67k    81.12%
+  4331312 requests in 5.00m, 0.85GB read
+Requests/sec:  14432.89
+Transfer/sec:      2.90MB
+interation: 2
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.12ms  222.81us  10.01ms   94.63%
+    Req/Sec     7.21k   182.61    13.61k    80.95%
+  4303228 requests in 5.00m, 865.92MB read
+Requests/sec:  14339.31
+Transfer/sec:      2.89MB
+interation: 3
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.12ms  249.27us  10.08ms   96.80%
+    Req/Sec     7.20k   160.95     7.61k    78.91%
+  4297087 requests in 5.00m, 864.68MB read
+Requests/sec:  14318.86
+Transfer/sec:      2.88MB
+interation: 4
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.12ms  308.80us  38.14ms   98.52%
+    Req/Sec     7.19k   160.65     7.68k    85.59%
+  4296365 requests in 5.00m, 864.54MB read
+Requests/sec:  14316.45
+Transfer/sec:      2.88MB
+interation: 5
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.12ms  211.43us   9.90ms   94.01%
+    Req/Sec     7.17k   161.83     7.72k    78.23%
+  4278455 requests in 5.00m, 860.93MB read
+Requests/sec:  14261.50
+Transfer/sec:      2.87MB
+32 concurrent
+interation: 1
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.25ms  304.58us  14.98ms   97.61%
+    Req/Sec     7.16k   162.82     7.74k    85.95%
+  4276828 requests in 5.00m, 860.61MB read
+Requests/sec:  14254.95
+Transfer/sec:      2.87MB
+interation: 2
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.23ms  318.54us  17.71ms   97.84%
+    Req/Sec     7.21k   182.29     7.59k    79.52%
+  4304571 requests in 5.00m, 866.19MB read
+Requests/sec:  14347.68
+Transfer/sec:      2.89MB
+interation: 3
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.26ms  262.81us  11.11ms   96.69%
+    Req/Sec     7.12k   163.42     7.59k    77.85%
+  4252784 requests in 5.00m, 855.77MB read
+Requests/sec:  14175.09
+Transfer/sec:      2.85MB
+interation: 4
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.26ms  221.04us  11.63ms   90.16%
+    Req/Sec     7.12k   167.85     7.59k    78.62%
+  4250768 requests in 5.00m, 855.36MB read
+Requests/sec:  14168.26
+Transfer/sec:      2.85MB
+interation: 5
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.24ms  370.98us  41.96ms   98.55%
+    Req/Sec     7.19k   171.62     8.01k    88.07%
+  4292856 requests in 5.00m, 863.83MB read
+Requests/sec:  14309.08
+Transfer/sec:      2.88MB
+64 concurrent
+interation: 1
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.53ms  316.12us  15.15ms   90.73%
+    Req/Sec     7.09k   163.01     7.55k    78.82%
+  4235148 requests in 5.00m, 852.22MB read
+Requests/sec:  14114.39
+Transfer/sec:      2.84MB
+interation: 2
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.54ms  325.03us  17.30ms   92.29%
+    Req/Sec     7.08k   176.75     7.65k    80.32%
+  4228948 requests in 5.00m, 850.97MB read
+Requests/sec:  14094.55
+Transfer/sec:      2.84MB
+interation: 3
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.61ms  382.18us  14.13ms   96.89%
+    Req/Sec     6.98k   172.91     7.43k    81.83%
+  4170219 requests in 5.00m, 839.15MB read
+Requests/sec:  13897.55
+Transfer/sec:      2.80MB
+interation: 4
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.55ms  305.82us  17.40ms   92.16%
+    Req/Sec     7.06k   155.74     7.51k    78.05%
+  4218722 requests in 5.00m, 848.91MB read
+Requests/sec:  14059.50
+Transfer/sec:      2.83MB
+interation: 5
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.58ms  304.22us  16.31ms   91.39%
+    Req/Sec     7.02k   173.23     7.81k    76.08%
+  4194357 requests in 5.00m, 844.01MB read
+Requests/sec:  13978.58
+Transfer/sec:      2.81MB
+128 concurrent
+interation: 1
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.16ms  683.40us  55.49ms   96.75%
+    Req/Sec     7.02k   226.08     7.63k    86.42%
+  4194578 requests in 5.00m, 844.06MB read
+Requests/sec:  13978.57
+Transfer/sec:      2.81MB
+interation: 2
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.18ms  545.35us  20.10ms   94.53%
+    Req/Sec     7.00k   191.66     7.59k    82.73%
+  4181649 requests in 5.00m, 841.45MB read
+Requests/sec:  13934.81
+Transfer/sec:      2.80MB
+interation: 3
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.15ms  540.32us  21.74ms   93.65%
+    Req/Sec     7.03k   180.99     7.51k    83.93%
+  4197161 requests in 5.00m, 844.57MB read
+Requests/sec:  13987.40
+Transfer/sec:      2.81MB
+interation: 4
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.10ms  421.63us  20.24ms   90.61%
+    Req/Sec     7.07k   167.29     7.59k    80.58%
+  4221380 requests in 5.00m, 849.45MB read
+Requests/sec:  14067.36
+Transfer/sec:      2.83MB
+interation: 5
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     9.10ms  798.60us  56.74ms   97.44%
+    Req/Sec     7.07k   269.07     7.64k    87.13%
+  4221966 requests in 5.00m, 849.57MB read
+Requests/sec:  14070.29
+Transfer/sec:      2.83MB
+256 concurrent
+interation: 1
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    32.35ms   47.56ms 347.53ms   81.79%
+    Req/Sec    15.20k     1.19k   25.58k    71.25%
+  9072079 requests in 5.00m, 2.78GB read
+  Non-2xx or 3xx responses: 8810750
+Requests/sec:  30238.29
+Transfer/sec:      9.47MB
+interation: 2
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    35.61ms   52.95ms 319.63ms   81.85%
+    Req/Sec    14.66k     1.17k   27.26k    70.13%
+  8754563 requests in 5.00m, 2.68GB read
+  Non-2xx or 3xx responses: 8520259
+Requests/sec:  29180.02
+Transfer/sec:      9.15MB
+interation: 3
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    29.88ms   44.21ms 292.84ms   81.98%
+    Req/Sec    16.52k     2.24k   26.83k    65.63%
+  9863695 requests in 5.00m, 3.02GB read
+  Non-2xx or 3xx responses: 9580659
+Requests/sec:  32876.15
+Transfer/sec:     10.30MB
+interation: 4
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    25.96ms   38.29ms 218.66ms   81.75%
+    Req/Sec    19.15k     1.55k   23.89k    74.73%
+  11433120 requests in 5.00m, 3.50GB read
+  Non-2xx or 3xx responses: 11116132
+Requests/sec:  38107.39
+Transfer/sec:     11.94MB
+interation: 5
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    26.55ms   39.73ms 592.96ms   82.00%
+    Req/Sec    18.80k     1.76k   28.50k    77.55%
+  11225229 requests in 5.00m, 3.44GB read
+  Non-2xx or 3xx responses: 10913069
+Requests/sec:  37414.09
+Transfer/sec:     11.73MB
+512 concurrent
+interation: 1
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    49.18ms   87.69ms 595.72ms   86.41%
+    Req/Sec    16.71k     1.31k   22.60k    78.50%
+  9975343 requests in 5.00m, 3.07GB read
+  Non-2xx or 3xx responses: 9861639
+Requests/sec:  33246.96
+Transfer/sec:     10.48MB
+interation: 2
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    49.76ms   89.39ms 595.03ms   86.48%
+    Req/Sec    16.67k     1.37k   22.03k    74.43%
+  9951794 requests in 5.00m, 3.06GB read
+  Non-2xx or 3xx responses: 9838921
+Requests/sec:  33168.28
+Transfer/sec:     10.46MB
+interation: 3
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    47.96ms   85.56ms 586.00ms   86.42%
+    Req/Sec    17.10k     1.29k   23.37k    78.50%
+  10209661 requests in 5.00m, 3.14GB read
+  Non-2xx or 3xx responses: 10092544
+Requests/sec:  34026.99
+Transfer/sec:     10.73MB
+interation: 4
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    47.13ms   84.02ms 545.28ms   86.44%
+    Req/Sec    17.44k     1.20k   20.27k    80.62%
+  10414308 requests in 5.00m, 3.21GB read
+  Non-2xx or 3xx responses: 10295363
+Requests/sec:  34708.10
+Transfer/sec:     10.94MB
+interation: 5
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    47.33ms   84.23ms 567.82ms   86.42%
+    Req/Sec    17.25k     1.19k   20.98k    80.28%
+  10298851 requests in 5.00m, 3.17GB read
+  Non-2xx or 3xx responses: 10179791
+Requests/sec:  34325.36
+Transfer/sec:     10.82MB
+512 concurrent
+interation: 1
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    47.13ms   83.94ms 573.18ms   86.41%
+    Req/Sec    17.48k     1.15k   22.14k    82.77%
+  10433934 requests in 5.00m, 3.21GB read
+  Non-2xx or 3xx responses: 10315996
+Requests/sec:  34774.51
+Transfer/sec:     10.96MB
+interation: 2
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    47.33ms   84.53ms 592.05ms   86.41%
+    Req/Sec    17.52k     1.23k   22.33k    80.15%
+  10461622 requests in 5.00m, 3.22GB read
+  Non-2xx or 3xx responses: 10344209
+Requests/sec:  34867.42
+Transfer/sec:     10.99MB
+interation: 3
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    48.34ms   86.23ms 601.03ms   86.38%
+    Req/Sec    17.06k     1.34k   21.13k    80.65%
+  10186648 requests in 5.00m, 3.14GB read
+  Non-2xx or 3xx responses: 10071640
+Requests/sec:  33951.85
+Transfer/sec:     10.71MB
+interation: 4
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    47.57ms   84.79ms 574.60ms   86.36%
+    Req/Sec    17.32k     1.25k   22.83k    82.73%
+  10339442 requests in 5.00m, 3.18GB read
+  Non-2xx or 3xx responses: 10222620
+Requests/sec:  34459.28
+Transfer/sec:     10.87MB
+interation: 5
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    46.79ms   83.32ms 584.32ms   86.50%
+    Req/Sec    17.46k     1.14k   22.44k    82.57%
+  10424679 requests in 5.00m, 3.21GB read
+  Non-2xx or 3xx responses: 10303890
+Requests/sec:  34744.63
+Transfer/sec:     10.95MB
+1024 concurrent
+interation: 1
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    77.07ms  161.61ms   1.18s    91.25%
+    Req/Sec    16.56k     1.48k   29.24k    84.33%
+  9885885 requests in 5.00m, 3.05GB read
+  Non-2xx or 3xx responses: 9837768
+Requests/sec:  32945.28
+Transfer/sec:     10.41MB
+interation: 2
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    75.25ms  157.13ms   1.22s    91.24%
+    Req/Sec    16.83k     1.47k   29.16k    84.92%
+  10047771 requests in 5.00m, 3.10GB read
+  Non-2xx or 3xx responses: 9998234
+Requests/sec:  33485.71
+Transfer/sec:     10.58MB
+interation: 3
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    76.40ms  160.00ms   1.21s    91.25%
+    Req/Sec    16.66k     1.48k   28.89k    85.12%
+  9943497 requests in 5.00m, 3.07GB read
+  Non-2xx or 3xx responses: 9894855
+Requests/sec:  33137.71
+Transfer/sec:     10.47MB
+interation: 4
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    75.98ms  158.77ms   1.18s    91.24%
+    Req/Sec    16.71k     1.43k   29.09k    83.83%
+  9975033 requests in 5.00m, 3.08GB read
+  Non-2xx or 3xx responses: 9926037
+Requests/sec:  33241.63
+Transfer/sec:     10.51MB
+interation: 5
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    75.56ms  158.12ms   1.18s    91.23%
+    Req/Sec    16.85k     1.34k   28.55k    82.82%
+  10058553 requests in 5.00m, 3.10GB read
+  Non-2xx or 3xx responses: 10009604
+Requests/sec:  33519.64
+Transfer/sec:     10.59MB
+2048 concurrent
+interation: 1
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    61.51ms   70.39ms   1.93s    88.18%
+    Req/Sec    23.13k     2.97k   29.68k    77.79%
+  13808251 requests in 5.00m, 4.25GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1
+  Non-2xx or 3xx responses: 13670095
+Requests/sec:  46023.09
+Transfer/sec:     14.52MB
+interation: 2
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    60.98ms   67.82ms   1.86s    87.92%
+    Req/Sec    23.26k     2.69k   29.82k    78.33%
+  13883636 requests in 5.00m, 4.28GB read
+  Socket errors: connect 0, read 0, write 0, timeout 2
+  Non-2xx or 3xx responses: 13743484
+Requests/sec:  46270.87
+Transfer/sec:     14.60MB
+interation: 3
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    61.71ms   69.46ms   1.94s    88.10%
+    Req/Sec    22.98k     2.76k   29.29k    76.68%
+  13719508 requests in 5.00m, 4.23GB read
+  Non-2xx or 3xx responses: 13582364
+Requests/sec:  45726.74
+Transfer/sec:     14.43MB
+interation: 4
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    60.61ms   68.38ms   1.96s    88.23%
+    Req/Sec    23.34k     2.79k   29.59k    77.49%
+  13934430 requests in 5.00m, 4.29GB read
+  Non-2xx or 3xx responses: 13791755
+Requests/sec:  46442.92
+Transfer/sec:     14.65MB
+interation: 5
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    62.25ms   71.90ms   1.95s    88.18%
+    Req/Sec    22.92k     2.84k   32.88k    75.14%
+  13678586 requests in 5.00m, 4.21GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1
+  Non-2xx or 3xx responses: 13544255
+Requests/sec:  45585.96
+Transfer/sec:     14.38MB
+4096 concurrent
+interation: 1
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   119.73ms  121.27ms   2.00s    87.05%
+    Req/Sec    21.39k     2.61k   28.26k    75.64%
+  12767752 requests in 5.00m, 3.93GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1674
+  Non-2xx or 3xx responses: 12644267
+Requests/sec:  42549.17
+Transfer/sec:     13.42MB
+interation: 2
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   120.30ms  122.24ms   2.00s    87.06%
+    Req/Sec    21.36k     2.53k   27.37k    73.82%
+  12749541 requests in 5.00m, 3.93GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1670
+  Non-2xx or 3xx responses: 12628366
+Requests/sec:  42490.00
+Transfer/sec:     13.41MB
+interation: 3
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   120.71ms  122.92ms   2.00s    87.08%
+    Req/Sec    21.22k     2.66k   29.12k    74.22%
+  12669009 requests in 5.00m, 3.90GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1861
+  Non-2xx or 3xx responses: 12547736
+Requests/sec:  42218.77
+Transfer/sec:     13.32MB
+interation: 4
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   121.03ms  123.34ms   2.00s    87.14%
+    Req/Sec    21.21k     2.68k   27.79k    75.05%
+  12660222 requests in 5.00m, 3.90GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1866
+  Non-2xx or 3xx responses: 12538290
+Requests/sec:  42190.52
+Transfer/sec:     13.31MB
+interation: 5
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/php/date.php
+Running 5m test @ http://10.1.0.9:80/php/date.php
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   121.39ms  122.70ms   2.00s    87.04%
+    Req/Sec    21.09k     2.58k   28.36k    73.92%
+  12590113 requests in 5.00m, 3.88GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1861
+  Non-2xx or 3xx responses: 12462810
+Requests/sec:  41954.84
+Transfer/sec:     13.23MB

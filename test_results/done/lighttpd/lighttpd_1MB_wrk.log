@@ -1,0 +1,745 @@
+how many requests can you serve in 5 minutes?
+1 concurrent
+interation: 1
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   827.07us  310.36us  36.04ms   98.42%
+    Req/Sec     1.23k    39.92     1.58k    81.47%
+  365873 requests in 5.00m, 357.37GB read
+Requests/sec:   1219.57
+Transfer/sec:      1.19GB
+interation: 2
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   831.43us  214.71us  12.37ms   98.24%
+    Req/Sec     1.22k    33.13     1.33k    67.94%
+  363161 requests in 5.00m, 354.72GB read
+Requests/sec:   1210.14
+Transfer/sec:      1.18GB
+interation: 3
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   824.03us  208.87us  10.15ms   98.20%
+    Req/Sec     1.23k    36.46     1.53k    79.43%
+  366149 requests in 5.00m, 357.64GB read
+Requests/sec:   1220.49
+Transfer/sec:      1.19GB
+interation: 4
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   833.98us  189.34us   9.64ms   97.98%
+    Req/Sec     1.21k    37.25     1.51k    74.01%
+  361258 requests in 5.00m, 352.87GB read
+Requests/sec:   1203.79
+Transfer/sec:      1.18GB
+interation: 5
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   827.29us  223.36us   9.60ms   98.15%
+    Req/Sec     1.22k    35.32     1.51k    75.87%
+  365262 requests in 5.00m, 356.78GB read
+Requests/sec:   1217.13
+Transfer/sec:      1.19GB
+2 concurrent
+interation: 1
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.37ms  327.42us  10.10ms   90.14%
+    Req/Sec   737.67     28.39     1.25k    68.44%
+  440615 requests in 5.00m, 430.38GB read
+Requests/sec:   1468.23
+Transfer/sec:      1.43GB
+interation: 2
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.40ms  423.15us  35.22ms   91.91%
+    Req/Sec   720.50     30.72   800.00     74.43%
+  430251 requests in 5.00m, 420.26GB read
+Requests/sec:   1434.15
+Transfer/sec:      1.40GB
+interation: 3
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.40ms  370.97us  14.55ms   91.84%
+    Req/Sec   719.17     31.09     1.21k    80.99%
+  429543 requests in 5.00m, 419.56GB read
+Requests/sec:   1431.34
+Transfer/sec:      1.40GB
+interation: 4
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.41ms  347.20us  12.07ms   90.26%
+    Req/Sec   714.96     26.83   828.00     72.10%
+  426986 requests in 5.00m, 417.07GB read
+Requests/sec:   1423.28
+Transfer/sec:      1.39GB
+interation: 5
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.40ms  345.52us  11.57ms   90.89%
+    Req/Sec   718.34     28.70     1.08k    73.44%
+  429048 requests in 5.00m, 419.08GB read
+Requests/sec:   1429.69
+Transfer/sec:      1.40GB
+4 concurrent
+interation: 1
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.67ms  631.38us  15.00ms   81.43%
+    Req/Sec   752.84     31.75   848.00     63.97%
+  449642 requests in 5.00m, 439.20GB read
+Requests/sec:   1498.67
+Transfer/sec:      1.46GB
+interation: 2
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.62ms  645.74us  14.95ms   82.08%
+    Req/Sec   766.65     26.15     0.85k    67.60%
+  457884 requests in 5.00m, 447.25GB read
+Requests/sec:   1526.16
+Transfer/sec:      1.49GB
+interation: 3
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.66ms  701.65us  39.31ms   84.37%
+    Req/Sec   755.13     30.60   848.00     68.53%
+  451009 requests in 5.00m, 440.53GB read
+Requests/sec:   1503.21
+Transfer/sec:      1.47GB
+interation: 4
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.64ms  652.93us  16.07ms   82.29%
+    Req/Sec   760.23     26.73     0.89k    65.43%
+  454069 requests in 5.00m, 443.52GB read
+Requests/sec:   1513.42
+Transfer/sec:      1.48GB
+interation: 5
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.66ms  658.10us  13.88ms   81.13%
+    Req/Sec   757.26     27.62   848.00     67.13%
+  452246 requests in 5.00m, 441.74GB read
+Requests/sec:   1507.40
+Transfer/sec:      1.47GB
+8 concurrent
+interation: 1
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.18ms    1.47ms  30.36ms   83.84%
+    Req/Sec   779.55     40.99     0.92k    75.17%
+  465596 requests in 5.00m, 454.78GB read
+Requests/sec:   1551.90
+Transfer/sec:      1.52GB
+interation: 2
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.27ms    1.39ms  30.00ms   83.69%
+    Req/Sec   764.94     35.33     0.90k    76.88%
+  456878 requests in 5.00m, 446.26GB read
+Requests/sec:   1522.81
+Transfer/sec:      1.49GB
+interation: 3
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.27ms    1.50ms  38.35ms   84.17%
+    Req/Sec   765.65     38.85     0.92k    76.57%
+  457295 requests in 5.00m, 446.67GB read
+Requests/sec:   1524.24
+Transfer/sec:      1.49GB
+interation: 4
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.24ms    1.63ms  30.64ms   84.79%
+    Req/Sec   772.66     43.65     0.96k    73.50%
+  461479 requests in 5.00m, 450.76GB read
+Requests/sec:   1538.18
+Transfer/sec:      1.50GB
+interation: 5
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     5.25ms    1.53ms  29.41ms   83.90%
+    Req/Sec   769.65     39.96     0.95k    73.08%
+  459677 requests in 5.00m, 449.00GB read
+Requests/sec:   1532.13
+Transfer/sec:      1.50GB
+16 concurrent
+interation: 1
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.63ms    4.81ms  67.83ms   91.26%
+    Req/Sec   776.28     43.78     0.96k    71.80%
+  463629 requests in 5.00m, 452.86GB read
+Requests/sec:   1545.34
+Transfer/sec:      1.51GB
+interation: 2
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.52ms    3.85ms  65.38ms   87.20%
+    Req/Sec   775.12     49.92     0.92k    69.23%
+  462895 requests in 5.00m, 452.14GB read
+Requests/sec:   1542.92
+Transfer/sec:      1.51GB
+interation: 3
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.62ms    4.43ms  64.25ms   89.86%
+    Req/Sec   772.68     51.61     0.91k    66.22%
+  461446 requests in 5.00m, 450.73GB read
+Requests/sec:   1538.11
+Transfer/sec:      1.50GB
+interation: 4
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.46ms    3.92ms  64.73ms   87.66%
+    Req/Sec   780.62     44.19     0.93k    69.40%
+  466196 requests in 5.00m, 455.37GB read
+Requests/sec:   1553.95
+Transfer/sec:      1.52GB
+interation: 5
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    10.62ms    3.51ms  70.61ms   86.02%
+    Req/Sec   764.28     46.63     0.93k    72.48%
+  456458 requests in 5.00m, 445.86GB read
+Requests/sec:   1521.41
+Transfer/sec:      1.49GB
+32 concurrent
+interation: 1
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    21.11ms    8.23ms 130.85ms   90.12%
+    Req/Sec   776.55     44.98     0.93k    70.80%
+  463770 requests in 5.00m, 453.00GB read
+Requests/sec:   1545.84
+Transfer/sec:      1.51GB
+interation: 2
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    21.38ms    8.32ms 136.81ms   90.24%
+    Req/Sec   766.48     45.51     0.91k    70.65%
+  457730 requests in 5.00m, 447.10GB read
+Requests/sec:   1525.72
+Transfer/sec:      1.49GB
+interation: 3
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    21.09ms    7.53ms 129.13ms   88.58%
+    Req/Sec   773.73     43.79     0.91k    68.90%
+  462090 requests in 5.00m, 451.36GB read
+Requests/sec:   1540.28
+Transfer/sec:      1.50GB
+interation: 4
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    21.15ms    7.97ms 131.23ms   89.07%
+    Req/Sec   773.31     48.69     0.92k    72.60%
+  461826 requests in 5.00m, 451.11GB read
+Requests/sec:   1539.39
+Transfer/sec:      1.50GB
+interation: 5
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    21.11ms    7.74ms 157.35ms   88.62%
+    Req/Sec   774.01     50.01     0.93k    71.50%
+  462271 requests in 5.00m, 451.54GB read
+Requests/sec:   1540.87
+Transfer/sec:      1.51GB
+64 concurrent
+interation: 1
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    47.13ms   25.62ms 958.29ms   95.95%
+    Req/Sec   709.02     64.93     0.88k    69.29%
+  423579 requests in 5.00m, 413.76GB read
+Requests/sec:   1411.46
+Transfer/sec:      1.38GB
+interation: 2
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    47.45ms   22.52ms   1.04s    96.32%
+    Req/Sec   696.62     60.43     0.90k    69.75%
+  416011 requests in 5.00m, 406.37GB read
+Requests/sec:   1386.67
+Transfer/sec:      1.35GB
+interation: 3
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    48.18ms   28.66ms   1.01s    95.56%
+    Req/Sec   699.43     81.75     0.88k    70.53%
+  417692 requests in 5.00m, 408.01GB read
+Requests/sec:   1392.30
+Transfer/sec:      1.36GB
+interation: 4
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    48.35ms   26.09ms   1.28s    96.26%
+    Req/Sec   689.53     67.52     0.90k    73.85%
+  411795 requests in 5.00m, 402.25GB read
+Requests/sec:   1372.63
+Transfer/sec:      1.34GB
+interation: 5
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    48.56ms   24.62ms 927.08ms   96.11%
+    Req/Sec   684.19     67.30     1.51k    73.09%
+  408668 requests in 5.00m, 399.20GB read
+Requests/sec:   1361.77
+Transfer/sec:      1.33GB
+128 concurrent
+interation: 1
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   191.57ms  159.13ms   1.15s    84.69%
+    Req/Sec   397.86     78.92   720.00     70.12%
+  237670 requests in 5.00m, 232.21GB read
+Requests/sec:    792.20
+Transfer/sec:    792.56MB
+interation: 2
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   172.96ms  110.63ms 968.51ms   89.05%
+    Req/Sec   401.67     71.78   610.00     65.42%
+  239927 requests in 5.00m, 234.41GB read
+Requests/sec:    799.72
+Transfer/sec:    800.10MB
+interation: 3
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   172.78ms  121.97ms   1.18s    87.98%
+    Req/Sec   412.48     68.53   666.00     67.22%
+  246362 requests in 5.00m, 240.70GB read
+Requests/sec:    821.17
+Transfer/sec:    821.56MB
+interation: 4
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   154.43ms   73.50ms   1.02s    87.22%
+    Req/Sec   428.88     77.01   656.00     70.83%
+  256201 requests in 5.00m, 250.31GB read
+Requests/sec:    853.91
+Transfer/sec:    854.31MB
+interation: 5
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   165.97ms  100.03ms   1.33s    89.37%
+    Req/Sec   413.41     65.29   626.00     69.04%
+  246932 requests in 5.00m, 241.26GB read
+Requests/sec:    823.07
+Transfer/sec:    823.46MB
+256 concurrent
+interation: 1
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   706.63ms  314.44ms   2.00s    83.99%
+    Req/Sec   183.40    112.46     1.13k    86.89%
+  109419 requests in 5.00m, 106.99GB read
+  Socket errors: connect 0, read 0, write 0, timeout 378
+Requests/sec:    364.67
+Transfer/sec:    365.15MB
+interation: 2
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   699.00ms  296.68ms   2.00s    87.86%
+    Req/Sec   182.99    136.24     1.04k    89.15%
+  109075 requests in 5.00m, 106.66GB read
+  Socket errors: connect 0, read 0, write 0, timeout 1101
+Requests/sec:    363.53
+Transfer/sec:    364.03MB
+interation: 3
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   668.80ms  280.85ms   2.00s    87.13%
+    Req/Sec   194.80     77.50     1.05k    79.41%
+  115815 requests in 5.00m, 113.25GB read
+  Socket errors: connect 0, read 0, write 0, timeout 549
+Requests/sec:    385.99
+Transfer/sec:    386.49MB
+interation: 4
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   665.43ms  281.25ms   2.00s    86.59%
+    Req/Sec   194.95    118.97     1.05k    84.00%
+  116184 requests in 5.00m, 113.60GB read
+  Socket errors: connect 0, read 0, write 0, timeout 576
+Requests/sec:    387.21
+Transfer/sec:    387.70MB
+interation: 5
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   630.96ms  272.80ms   2.00s    87.48%
+    Req/Sec   208.29    101.43     1.10k    85.49%
+  124197 requests in 5.00m, 121.44GB read
+  Socket errors: connect 0, read 0, write 0, timeout 205
+Requests/sec:    413.94
+Transfer/sec:    414.46MB
+512 concurrent
+interation: 1
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.83s   160.06ms   2.00s    83.59%
+    Req/Sec    94.14     89.65     1.13k    93.19%
+  55848 requests in 5.00m, 54.79GB read
+  Socket errors: connect 0, read 139, write 0, timeout 55269
+Requests/sec:    186.14
+Transfer/sec:    187.00MB
+interation: 2
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    93.06    105.88     1.49k    91.39%
+  55077 requests in 5.00m, 54.04GB read
+  Socket errors: connect 0, read 57, write 0, timeout 55077
+Requests/sec:    183.57
+Transfer/sec:    184.42MB
+interation: 3
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    90.96     86.68     1.55k    92.22%
+  53970 requests in 5.00m, 52.98GB read
+  Socket errors: connect 0, read 88, write 0, timeout 53970
+Requests/sec:    179.87
+Transfer/sec:    180.80MB
+interation: 4
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.95s    44.19ms   2.00s    76.92%
+    Req/Sec    91.28     84.98     1.63k    93.64%
+  54316 requests in 5.00m, 53.32GB read
+  Socket errors: connect 0, read 105, write 0, timeout 54303
+Requests/sec:    181.03
+Transfer/sec:    181.98MB
+interation: 5
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.88s   109.16ms   2.00s    79.88%
+    Req/Sec    95.90     58.68     1.40k    90.74%
+  57071 requests in 5.00m, 56.00GB read
+  Socket errors: connect 0, read 159, write 0, timeout 55510
+Requests/sec:    190.20
+Transfer/sec:    191.11MB
+512 concurrent
+interation: 1
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.91s    73.90ms   2.00s    76.04%
+    Req/Sec    91.92     91.39     1.54k    92.59%
+  54667 requests in 5.00m, 53.64GB read
+  Socket errors: connect 0, read 87, write 0, timeout 54450
+Requests/sec:    182.20
+Transfer/sec:    183.08MB
+interation: 2
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.92s    65.99ms   2.00s    73.29%
+    Req/Sec    93.25     96.13     1.59k    94.63%
+  55688 requests in 5.00m, 54.64GB read
+  Socket errors: connect 0, read 132, write 0, timeout 55527
+Requests/sec:    185.59
+Transfer/sec:    186.49MB
+interation: 3
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.90s    93.71ms   2.00s    79.53%
+    Req/Sec    92.52     43.03     1.49k    82.15%
+  55002 requests in 5.00m, 53.96GB read
+  Socket errors: connect 0, read 116, write 0, timeout 54235
+Requests/sec:    183.31
+Transfer/sec:    184.17MB
+interation: 4
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    91.03     94.89     1.58k    92.57%
+  53969 requests in 5.00m, 52.97GB read
+  Socket errors: connect 0, read 87, write 0, timeout 53969
+Requests/sec:    179.87
+Transfer/sec:    180.80MB
+interation: 5
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.94s    83.85ms   2.00s    85.50%
+    Req/Sec    92.13    106.60     1.68k    93.14%
+  54577 requests in 5.00m, 53.58GB read
+  Socket errors: connect 0, read 85, write 0, timeout 54246
+Requests/sec:    181.90
+Transfer/sec:    182.86MB
+1024 concurrent
+interation: 1
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    77.89     30.18   460.00     70.74%
+  45865 requests in 5.00m, 45.27GB read
+  Socket errors: connect 0, read 35001, write 0, timeout 45865
+Requests/sec:    152.85
+Transfer/sec:    154.49MB
+interation: 2
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    76.19     29.42   270.00     71.76%
+  44861 requests in 5.00m, 44.32GB read
+  Socket errors: connect 0, read 35867, write 0, timeout 44861
+Requests/sec:    149.50
+Transfer/sec:    151.25MB
+interation: 3
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    77.05     28.99   242.00     71.22%
+  45363 requests in 5.00m, 44.79GB read
+  Socket errors: connect 0, read 35644, write 0, timeout 45363
+Requests/sec:    151.18
+Transfer/sec:    152.84MB
+interation: 4
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    77.21     29.61   500.00     71.62%
+  45480 requests in 5.00m, 44.92GB read
+  Socket errors: connect 0, read 35414, write 0, timeout 45480
+Requests/sec:    151.57
+Transfer/sec:    153.29MB
+interation: 5
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    79.22     29.27   373.00     71.52%
+  46723 requests in 5.00m, 46.11GB read
+  Socket errors: connect 0, read 33609, write 0, timeout 46723
+Requests/sec:    155.71
+Transfer/sec:    157.37MB
+2048 concurrent
+interation: 1
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    66.99     28.70   230.00     72.92%
+  38823 requests in 5.00m, 38.88GB read
+  Socket errors: connect 0, read 38823, write 0, timeout 38823
+Requests/sec:    129.38
+Transfer/sec:    132.69MB
+interation: 2
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    66.38     28.55   232.00     73.11%
+  38492 requests in 5.00m, 38.58GB read
+  Socket errors: connect 0, read 38492, write 0, timeout 38492
+Requests/sec:    128.27
+Transfer/sec:    131.63MB
+interation: 3
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    66.13     28.31   232.00     73.62%
+  38316 requests in 5.00m, 38.37GB read
+  Socket errors: connect 0, read 38316, write 0, timeout 38316
+Requests/sec:    127.69
+Transfer/sec:    130.93MB
+interation: 4
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    66.47     29.03   242.00     72.86%
+  38600 requests in 5.00m, 38.69GB read
+  Socket errors: connect 0, read 38600, write 0, timeout 38600
+Requests/sec:    128.63
+Transfer/sec:    132.03MB
+interation: 5
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    66.22     28.33   262.00     73.68%
+  38449 requests in 5.00m, 38.51GB read
+  Socket errors: connect 0, read 38449, write 0, timeout 38449
+Requests/sec:    128.13
+Transfer/sec:    131.43MB
+4096 concurrent
+interation: 1
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    61.61     25.62   181.00     68.05%
+  34663 requests in 5.00m, 36.58GB read
+  Socket errors: connect 0, read 38322, write 1518, timeout 34663
+Requests/sec:    115.50
+Transfer/sec:    124.83MB
+interation: 2
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    62.28     25.84   190.00     67.93%
+  35015 requests in 5.00m, 36.78GB read
+  Socket errors: connect 0, read 37984, write 562, timeout 35015
+Requests/sec:    116.68
+Transfer/sec:    125.51MB
+interation: 3
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    61.29     25.61   170.00     67.77%
+  34190 requests in 5.00m, 36.65GB read
+  Socket errors: connect 0, read 37119, write 0, timeout 34190
+Requests/sec:    113.93
+Transfer/sec:    125.07MB
+interation: 4
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    60.97     26.04   161.00     67.09%
+  34035 requests in 5.00m, 36.43GB read
+  Socket errors: connect 0, read 36962, write 0, timeout 34035
+Requests/sec:    113.44
+Transfer/sec:    124.34MB
+interation: 5
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/img/1MB.png
+Running 5m test @ http://10.1.0.9:80/img/1MB.png
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec    61.57     25.50   171.00     67.80%
+  34379 requests in 5.00m, 36.78GB read
+  Socket errors: connect 0, read 37332, write 0, timeout 34379
+Requests/sec:    114.59
+Transfer/sec:    125.54MB

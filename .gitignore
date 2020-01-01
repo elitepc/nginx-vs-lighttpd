@@ -1,2 +1,7 @@
 openrc
 *.pub
+!test_results/*
+!test_results/done/*
+!test_results/done/lighttpd/*
+!test_results/done/nginx/*
+!test_results/done/ip/*

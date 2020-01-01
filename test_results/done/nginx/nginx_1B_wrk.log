@@ -1,0 +1,720 @@
+how many requests can you serve in 5 minutes?
+1 concurrent
+interation: 1
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    91.57us  182.47us  16.20ms   99.56%
+    Req/Sec    11.82k   675.33    13.82k    71.23%
+  3529876 requests in 5.00m, 821.39MB read
+Requests/sec:  11765.95
+Transfer/sec:      2.74MB
+interation: 2
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    85.48us   69.58us   8.44ms   99.32%
+    Req/Sec    11.95k   563.12    14.43k    73.37%
+  3568029 requests in 5.00m, 830.27MB read
+Requests/sec:  11893.39
+Transfer/sec:      2.77MB
+interation: 3
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    82.72us   89.21us  13.89ms   99.75%
+    Req/Sec    12.28k   796.10    13.83k    61.43%
+  3666640 requests in 5.00m, 853.21MB read
+Requests/sec:  12222.12
+Transfer/sec:      2.84MB
+interation: 4
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    82.23us  210.54us  33.06ms   99.80%
+    Req/Sec    12.67k   743.03    14.97k    60.73%
+  3780731 requests in 5.00m, 0.86GB read
+Requests/sec:  12602.42
+Transfer/sec:      2.93MB
+interation: 5
+wrk -c1 -t 1 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  1 threads and 1 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    84.92us   70.46us   8.99ms   99.49%
+    Req/Sec    11.97k   568.04    13.66k    69.91%
+  3574329 requests in 5.00m, 831.73MB read
+Requests/sec:  11910.45
+Transfer/sec:      2.77MB
+2 concurrent
+interation: 1
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    89.37us   79.99us   9.50ms   99.51%
+    Req/Sec    11.41k   451.46    12.83k    70.56%
+  6813016 requests in 5.00m, 1.55GB read
+Requests/sec:  22702.48
+Transfer/sec:      5.28MB
+interation: 2
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    85.56us   83.19us   8.71ms   99.58%
+    Req/Sec    11.96k   531.11    13.78k    68.60%
+  7137918 requests in 5.00m, 1.62GB read
+Requests/sec:  23792.88
+Transfer/sec:      5.54MB
+interation: 3
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    86.79us   94.09us   8.68ms   99.64%
+    Req/Sec    11.81k   531.07    13.22k    69.65%
+  7047711 requests in 5.00m, 1.60GB read
+Requests/sec:  23492.25
+Transfer/sec:      5.47MB
+interation: 4
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    86.71us   89.40us   8.77ms   99.53%
+    Req/Sec    11.86k   501.77    13.38k    68.31%
+  7081024 requests in 5.00m, 1.61GB read
+Requests/sec:  23595.59
+Transfer/sec:      5.49MB
+interation: 5
+wrk -c2 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    88.60us  198.43us  28.60ms   99.73%
+    Req/Sec    11.84k   549.17    13.70k    76.72%
+  7067498 requests in 5.00m, 1.61GB read
+Requests/sec:  23558.22
+Transfer/sec:      5.48MB
+4 concurrent
+interation: 1
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   107.62us   82.85us   8.57ms   99.32%
+    Req/Sec    18.82k   783.41    21.78k    71.31%
+  11239831 requests in 5.00m, 2.55GB read
+Requests/sec:  37453.61
+Transfer/sec:      8.72MB
+interation: 2
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   111.75us  211.58us  20.16ms   99.63%
+    Req/Sec    18.92k     0.88k   21.87k    71.57%
+  11296145 requests in 5.00m, 2.57GB read
+Requests/sec:  37653.66
+Transfer/sec:      8.76MB
+interation: 3
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   107.03us  110.17us   8.94ms   99.53%
+    Req/Sec    19.09k   840.38    21.58k    69.34%
+  11402562 requests in 5.00m, 2.59GB read
+Requests/sec:  37995.85
+Transfer/sec:      8.84MB
+interation: 4
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   107.16us  103.60us   8.96ms   99.47%
+    Req/Sec    19.08k   833.66    21.26k    70.02%
+  11387445 requests in 5.00m, 2.59GB read
+Requests/sec:  37957.66
+Transfer/sec:      8.83MB
+interation: 5
+wrk -c4 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   107.50us   91.36us   8.89ms   99.33%
+    Req/Sec    18.94k     0.90k   21.01k    69.83%
+  11306329 requests in 5.00m, 2.57GB read
+Requests/sec:  37687.63
+Transfer/sec:      8.77MB
+8 concurrent
+interation: 1
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   178.89us  275.10us  37.96ms   99.68%
+    Req/Sec    22.96k     1.36k   26.23k    68.45%
+  13707069 requests in 5.00m, 3.11GB read
+Requests/sec:  45689.93
+Transfer/sec:     10.63MB
+interation: 2
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   179.41us  115.10us   8.84ms   99.20%
+    Req/Sec    22.62k     1.10k   32.25k    73.29%
+  13503051 requests in 5.00m, 3.07GB read
+Requests/sec:  44995.24
+Transfer/sec:     10.47MB
+interation: 3
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   179.97us  130.71us  11.19ms   99.40%
+    Req/Sec    22.64k     1.13k   26.00k    74.21%
+  13520440 requests in 5.00m, 3.07GB read
+Requests/sec:  45053.13
+Transfer/sec:     10.48MB
+interation: 4
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   184.26us  324.74us  27.42ms   99.60%
+    Req/Sec    22.89k     1.47k   26.09k    75.18%
+  13665669 requests in 5.00m, 3.11GB read
+Requests/sec:  45552.02
+Transfer/sec:     10.60MB
+interation: 5
+wrk -c8 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   175.96us  131.38us   8.94ms   99.41%
+    Req/Sec    23.12k     1.28k   26.29k    67.51%
+  13805724 requests in 5.00m, 3.14GB read
+Requests/sec:  46003.70
+Transfer/sec:     10.70MB
+16 concurrent
+interation: 1
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   373.13us  512.94us  24.62ms   99.30%
+    Req/Sec    23.34k     1.90k   27.06k    83.93%
+  13931361 requests in 5.00m, 3.17GB read
+Requests/sec:  46437.63
+Transfer/sec:     10.81MB
+interation: 2
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   333.54us  386.28us  48.71ms   99.71%
+    Req/Sec    24.46k     2.06k   44.27k    66.26%
+  14603196 requests in 5.00m, 3.32GB read
+Requests/sec:  48661.14
+Transfer/sec:     11.32MB
+interation: 3
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   341.02us  148.00us   9.15ms   97.53%
+    Req/Sec    23.69k     1.58k   28.64k    73.02%
+  14139771 requests in 5.00m, 3.21GB read
+Requests/sec:  47132.37
+Transfer/sec:     10.97MB
+interation: 4
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   340.59us  172.82us  18.55ms   98.88%
+    Req/Sec    23.75k     1.47k   28.21k    72.83%
+  14185160 requests in 5.00m, 3.22GB read
+Requests/sec:  47268.14
+Transfer/sec:     11.00MB
+interation: 5
+wrk -c16 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   321.17us  150.50us   9.90ms   98.07%
+    Req/Sec    25.14k     1.89k   28.93k    60.95%
+  15005274 requests in 5.00m, 3.41GB read
+Requests/sec:  50017.14
+Transfer/sec:     11.64MB
+32 concurrent
+interation: 1
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   589.69us  234.12us   9.43ms   97.85%
+    Req/Sec    27.46k     1.89k   31.36k    71.20%
+  16394383 requests in 5.00m, 3.73GB read
+Requests/sec:  54647.77
+Transfer/sec:     12.72MB
+interation: 2
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   613.36us  259.69us   9.81ms   97.26%
+    Req/Sec    26.55k     2.20k   31.18k    64.60%
+  15852366 requests in 5.00m, 3.60GB read
+Requests/sec:  52823.52
+Transfer/sec:     12.29MB
+interation: 3
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   670.57us  354.30us  32.06ms   98.84%
+    Req/Sec    24.44k     1.84k   29.53k    72.87%
+  14587614 requests in 5.00m, 3.31GB read
+Requests/sec:  48624.85
+Transfer/sec:     11.31MB
+interation: 4
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   622.20us  272.60us  11.23ms   97.15%
+    Req/Sec    26.22k     2.22k   31.08k    64.73%
+  15652385 requests in 5.00m, 3.56GB read
+Requests/sec:  52174.46
+Transfer/sec:     12.14MB
+interation: 5
+wrk -c32 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   640.48us  388.65us  36.42ms   99.04%
+    Req/Sec    25.63k     2.35k   31.26k    68.87%
+  15298840 requests in 5.00m, 3.48GB read
+Requests/sec:  50995.60
+Transfer/sec:     11.87MB
+64 concurrent
+interation: 1
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.20ms  369.42us  11.13ms   90.29%
+    Req/Sec    26.98k     2.98k   34.66k    64.80%
+  16106896 requests in 5.00m, 3.66GB read
+Requests/sec:  53689.02
+Transfer/sec:     12.49MB
+interation: 2
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.15ms  353.75us  14.76ms   92.27%
+    Req/Sec    27.97k     2.82k   34.42k    63.80%
+  16694574 requests in 5.00m, 3.79GB read
+Requests/sec:  55647.43
+Transfer/sec:     12.95MB
+interation: 3
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.13ms  324.31us  11.92ms   91.97%
+    Req/Sec    28.69k     2.72k   35.07k    66.70%
+  17125260 requests in 5.00m, 3.89GB read
+Requests/sec:  57082.40
+Transfer/sec:     13.28MB
+interation: 4
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.13ms  418.69us  39.88ms   96.18%
+    Req/Sec    28.63k     2.92k   35.71k    66.17%
+  17093802 requests in 5.00m, 3.88GB read
+Requests/sec:  56978.73
+Transfer/sec:     13.26MB
+interation: 5
+wrk -c64 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 64 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.16ms  325.12us  12.14ms   89.23%
+    Req/Sec    27.85k     3.01k   34.37k    63.87%
+  16623672 requests in 5.00m, 3.78GB read
+Requests/sec:  55411.82
+Transfer/sec:     12.89MB
+128 concurrent
+interation: 1
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.31ms  499.58us  11.53ms   76.58%
+    Req/Sec    27.88k     3.11k   37.01k    70.75%
+  16646498 requests in 5.00m, 3.78GB read
+Requests/sec:  55488.01
+Transfer/sec:     12.91MB
+interation: 2
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.99ms  416.02us  11.53ms   81.16%
+    Req/Sec    32.15k     2.82k   37.98k    76.58%
+  19191558 requests in 5.00m, 4.36GB read
+Requests/sec:  63970.91
+Transfer/sec:     14.89MB
+interation: 3
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.16ms  489.56us  12.24ms   77.53%
+    Req/Sec    29.73k     3.62k   37.65k    61.18%
+  17749612 requests in 5.00m, 4.03GB read
+Requests/sec:  59164.57
+Transfer/sec:     13.77MB
+interation: 4
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.06ms  453.16us  11.62ms   78.59%
+    Req/Sec    31.11k     3.46k   37.98k    65.25%
+  18573423 requests in 5.00m, 4.22GB read
+Requests/sec:  61910.69
+Transfer/sec:     14.41MB
+interation: 5
+wrk -c128 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.99ms  458.00us  34.89ms   86.68%
+    Req/Sec    32.37k     3.07k   37.80k    79.50%
+  19323197 requests in 5.00m, 4.39GB read
+Requests/sec:  64410.27
+Transfer/sec:     14.99MB
+256 concurrent
+interation: 1
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.59ms  575.78us  15.95ms   84.77%
+    Req/Sec    35.73k     2.82k   45.41k    84.97%
+  21328727 requests in 5.00m, 4.85GB read
+Requests/sec:  71088.20
+Transfer/sec:     16.54MB
+interation: 2
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.52ms  437.11us  13.43ms   79.91%
+    Req/Sec    36.45k     1.39k   42.53k    76.13%
+  21758199 requests in 5.00m, 4.94GB read
+Requests/sec:  72520.77
+Transfer/sec:     16.88MB
+interation: 3
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.80ms  759.80us  15.37ms   81.22%
+    Req/Sec    33.83k     4.19k   41.25k    75.45%
+  20192872 requests in 5.00m, 4.59GB read
+Requests/sec:  67304.18
+Transfer/sec:     15.66MB
+interation: 4
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.90ms  786.99us  15.10ms   77.09%
+    Req/Sec    32.93k     4.33k   40.68k    65.13%
+  19658146 requests in 5.00m, 4.47GB read
+Requests/sec:  65523.85
+Transfer/sec:     15.25MB
+interation: 5
+wrk -c256 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.05ms    0.90ms  16.53ms   76.73%
+    Req/Sec    31.71k     4.94k   40.84k    54.92%
+  18928121 requests in 5.00m, 4.30GB read
+Requests/sec:  63090.17
+Transfer/sec:     14.68MB
+512 concurrent
+interation: 1
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     8.04ms    2.56ms 220.55ms   93.66%
+    Req/Sec    32.09k     5.07k   44.04k    57.52%
+  19159796 requests in 5.00m, 4.35GB read
+Requests/sec:  63854.30
+Transfer/sec:     14.86MB
+interation: 2
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     8.04ms    2.74ms 221.06ms   94.59%
+    Req/Sec    32.07k     5.15k   44.18k    57.65%
+  19143818 requests in 5.00m, 4.35GB read
+Requests/sec:  63803.40
+Transfer/sec:     14.85MB
+interation: 3
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.67ms    3.71ms 223.20ms   97.43%
+    Req/Sec    33.81k     5.20k   44.31k    62.58%
+  20182221 requests in 5.00m, 4.59GB read
+Requests/sec:  67265.05
+Transfer/sec:     15.65MB
+interation: 4
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.01ms    4.41ms 221.76ms   98.15%
+    Req/Sec    37.60k     4.34k   44.91k    88.90%
+  22445005 requests in 5.00m, 5.10GB read
+Requests/sec:  74804.07
+Transfer/sec:     17.41MB
+interation: 5
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.72ms    3.07ms 420.61ms   99.35%
+    Req/Sec    38.51k     2.12k   47.46k    73.17%
+  22992758 requests in 5.00m, 5.22GB read
+Requests/sec:  76633.94
+Transfer/sec:     17.83MB
+512 concurrent
+interation: 1
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     7.73ms    3.35ms 419.27ms   96.68%
+    Req/Sec    33.47k     4.93k   47.17k    61.43%
+  19981343 requests in 5.00m, 4.54GB read
+Requests/sec:  66595.49
+Transfer/sec:     15.50MB
+interation: 2
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.91ms    5.03ms 421.57ms   99.61%
+    Req/Sec    38.02k     1.94k   44.34k    72.25%
+  22698156 requests in 5.00m, 5.16GB read
+Requests/sec:  75651.14
+Transfer/sec:     17.60MB
+interation: 3
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.81ms    4.62ms 418.42ms   99.64%
+    Req/Sec    38.48k     2.05k   46.85k    72.45%
+  22969775 requests in 5.00m, 5.22GB read
+Requests/sec:  76555.40
+Transfer/sec:     17.81MB
+interation: 4
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.52ms    4.03ms 423.35ms   99.65%
+    Req/Sec    39.97k     1.99k   44.46k    80.45%
+  23863955 requests in 5.00m, 5.42GB read
+Requests/sec:  79533.69
+Transfer/sec:     18.51MB
+interation: 5
+wrk -c512 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 512 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.55ms    1.83ms 220.14ms   96.14%
+    Req/Sec    39.31k     2.88k   44.44k    87.10%
+  23467187 requests in 5.00m, 5.33GB read
+Requests/sec:  78214.22
+Transfer/sec:     18.20MB
+1024 concurrent
+interation: 1
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    13.58ms    6.07ms 267.76ms   80.84%
+    Req/Sec    38.37k     2.83k   45.33k    66.97%
+  22906386 requests in 5.00m, 5.21GB read
+Requests/sec:  76333.73
+Transfer/sec:     17.76MB
+interation: 2
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    13.95ms    8.99ms 279.22ms   95.93%
+    Req/Sec    38.04k     3.53k   44.53k    77.55%
+  22707386 requests in 5.00m, 5.16GB read
+Requests/sec:  75674.47
+Transfer/sec:     17.61MB
+interation: 3
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    16.69ms   21.56ms 445.89ms   97.39%
+    Req/Sec    37.02k     3.91k   47.48k    72.82%
+  22098620 requests in 5.00m, 5.02GB read
+Requests/sec:  73644.47
+Transfer/sec:     17.14MB
+interation: 4
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    13.74ms    7.67ms 459.39ms   90.32%
+    Req/Sec    38.30k     3.00k   46.20k    70.48%
+  22863665 requests in 5.00m, 5.20GB read
+Requests/sec:  76189.91
+Transfer/sec:     17.73MB
+interation: 5
+wrk -c1024 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    14.89ms    5.43ms 257.11ms   87.71%
+    Req/Sec    34.78k     4.60k   45.35k    69.15%
+  20762769 requests in 5.00m, 4.72GB read
+Requests/sec:  69192.28
+Transfer/sec:     16.10MB
+2048 concurrent
+interation: 1
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.64ms   30.63ms 984.86ms   89.52%
+    Req/Sec    37.31k     2.05k   55.76k    78.25%
+  22272805 requests in 5.00m, 5.06GB read
+Requests/sec:  74220.80
+Transfer/sec:     17.27MB
+interation: 2
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.97ms   31.74ms 999.02ms   89.81%
+    Req/Sec    37.02k     2.66k   57.06k    84.53%
+  22095706 requests in 5.00m, 5.02GB read
+Requests/sec:  73629.28
+Transfer/sec:     17.13MB
+interation: 3
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    32.05ms   30.74ms   1.02s    90.08%
+    Req/Sec    36.73k     2.64k   49.97k    80.85%
+  21929952 requests in 5.00m, 4.98GB read
+Requests/sec:  73077.62
+Transfer/sec:     17.00MB
+interation: 4
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.65ms   30.08ms   1.94s    90.10%
+    Req/Sec    36.99k     2.52k   54.63k    84.38%
+  22080547 requests in 5.00m, 5.02GB read
+Requests/sec:  73580.57
+Transfer/sec:     17.12MB
+interation: 5
+wrk -c2048 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 2048 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    31.77ms   31.22ms   1.17s    89.88%
+    Req/Sec    37.36k     2.18k   54.79k    80.63%
+  22301095 requests in 5.00m, 5.07GB read
+Requests/sec:  74316.02
+Transfer/sec:     17.29MB
+4096 concurrent
+interation: 1
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    60.72ms   50.07ms   1.96s    51.88%
+    Req/Sec    35.95k     1.66k   40.61k    74.99%
+  21459130 requests in 5.00m, 4.88GB read
+  Socket errors: connect 0, read 0, write 0, timeout 9
+Requests/sec:  71523.68
+Transfer/sec:     16.64MB
+interation: 2
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    60.40ms   49.07ms   1.97s    49.56%
+    Req/Sec    35.91k     1.64k   40.85k    74.17%
+  21434349 requests in 5.00m, 4.87GB read
+  Socket errors: connect 0, read 0, write 0, timeout 7
+Requests/sec:  71437.68
+Transfer/sec:     16.62MB
+interation: 3
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    60.39ms   48.92ms   1.95s    49.57%
+    Req/Sec    35.94k     1.59k   40.67k    74.92%
+  21450765 requests in 5.00m, 4.87GB read
+  Socket errors: connect 0, read 0, write 0, timeout 9
+Requests/sec:  71497.39
+Transfer/sec:     16.64MB
+interation: 4
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    60.00ms   47.97ms   1.96s    47.46%
+    Req/Sec    35.95k     1.70k   43.47k    77.44%
+  21457518 requests in 5.00m, 4.88GB read
+  Socket errors: connect 0, read 0, write 0, timeout 8
+Requests/sec:  71517.76
+Transfer/sec:     16.64MB
+interation: 5
+wrk -c4096 -t 2 -d300s http://10.1.0.9:80/html/1B.html
+Running 5m test @ http://10.1.0.9:80/html/1B.html
+  2 threads and 4096 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    60.57ms   49.05ms   1.98s    48.56%
+    Req/Sec    35.78k     1.58k   40.69k    74.77%
+  21353733 requests in 5.00m, 4.85GB read
+  Socket errors: connect 0, read 0, write 0, timeout 5
+Requests/sec:  71168.64
+Transfer/sec:     16.56MB

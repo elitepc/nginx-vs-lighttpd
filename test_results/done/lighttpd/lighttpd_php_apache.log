@@ -1,0 +1,3111 @@
+
+how much time does it take to process 1 million requests?
+apache bench
+1 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1
+Time taken for tests:   156.891 seconds
+Complete requests:      1000000
+Failed requests:        56491
+   (Connect: 0, Receive: 18830, Length: 18831, Exceptions: 18830)
+Keep-Alive requests:    971456
+Total transferred:      182448869 bytes
+HTML transferred:       20604549 bytes
+Requests per second:    6373.84 [#/sec] (mean)
+Time per request:       0.157 [ms] (mean)
+Time per request:       0.157 [ms] (mean, across all concurrent requests)
+Transfer rate:          1135.64 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0    1024
+Processing:     0    0   2.1      0    1024
+Waiting:        0    0   0.3      0     149
+Total:          0    0   2.4      0    1036
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%   1036 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1
+Time taken for tests:   149.216 seconds
+Complete requests:      1000000
+Failed requests:        27214
+   (Connect: 0, Receive: 9071, Length: 9072, Exceptions: 9071)
+Keep-Alive requests:    981118
+Total transferred:      184263558 bytes
+HTML transferred:       20809488 bytes
+Requests per second:    6701.71 [#/sec] (mean)
+Time per request:       0.149 [ms] (mean)
+Time per request:       0.149 [ms] (mean, across all concurrent requests)
+Transfer rate:          1205.94 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     0    0   0.1      0      75
+Waiting:        0    0   0.1      0      73
+Total:          0    0   0.1      0      75
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%     75 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1
+Time taken for tests:   151.196 seconds
+Complete requests:      1000000
+Failed requests:        30659
+   (Connect: 0, Receive: 10219, Length: 10221, Exceptions: 10219)
+Keep-Alive requests:    979981
+Total transferred:      184049904 bytes
+HTML transferred:       20785359 bytes
+Requests per second:    6613.93 [#/sec] (mean)
+Time per request:       0.151 [ms] (mean)
+Time per request:       0.151 [ms] (mean, across all concurrent requests)
+Transfer rate:          1188.76 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0    1032
+Processing:     0    0   0.3      0     293
+Waiting:        0    0   0.2      0      75
+Total:          0    0   1.1      0    1042
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%   1042 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1
+Time taken for tests:   150.756 seconds
+Complete requests:      1000000
+Failed requests:        52934
+   (Connect: 0, Receive: 17644, Length: 17646, Exceptions: 17644)
+Keep-Alive requests:    972629
+Total transferred:      182669219 bytes
+HTML transferred:       20629434 bytes
+Requests per second:    6633.22 [#/sec] (mean)
+Time per request:       0.151 [ms] (mean)
+Time per request:       0.151 [ms] (mean, across all concurrent requests)
+Transfer rate:          1183.29 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     0    0   0.4      0     213
+Waiting:        0    0   0.3      0     122
+Total:          0    0   0.4      0     213
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%    213 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1
+Time taken for tests:   151.781 seconds
+Complete requests:      1000000
+Failed requests:        20530
+   (Connect: 0, Receive: 6843, Length: 6844, Exceptions: 6843)
+Keep-Alive requests:    983324
+Total transferred:      184677856 bytes
+HTML transferred:       20856276 bytes
+Requests per second:    6588.43 [#/sec] (mean)
+Time per request:       0.152 [ms] (mean)
+Time per request:       0.152 [ms] (mean, across all concurrent requests)
+Transfer rate:          1188.22 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     0    0   0.3      0     122
+Waiting:        0    0   0.2      0      96
+Total:          0    0   0.3      0     122
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%    122 (longest request)
+2 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2
+Time taken for tests:   119.669 seconds
+Complete requests:      1000000
+Failed requests:        58995
+   (Connect: 0, Receive: 19664, Length: 19668, Exceptions: 19663)
+Keep-Alive requests:    970629
+Total transferred:      182293237 bytes
+HTML transferred:       20586972 bytes
+Requests per second:    8356.36 [#/sec] (mean)
+Time per request:       0.239 [ms] (mean)
+Time per request:       0.120 [ms] (mean, across all concurrent requests)
+Transfer rate:          1487.61 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   2.0      0    1018
+Processing:     0    0   0.8      0     157
+Waiting:        0    0   0.7      0      82
+Total:          0    0   2.2      0    1024
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%   1024 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2
+Time taken for tests:   113.042 seconds
+Complete requests:      1000000
+Failed requests:        54537
+   (Connect: 0, Receive: 18178, Length: 18181, Exceptions: 18178)
+Keep-Alive requests:    972100
+Total transferred:      182569739 bytes
+HTML transferred:       20618199 bytes
+Requests per second:    8846.29 [#/sec] (mean)
+Time per request:       0.226 [ms] (mean)
+Time per request:       0.113 [ms] (mean, across all concurrent requests)
+Transfer rate:          1577.21 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   2.0      0    1023
+Processing:     0    0   0.5      0     212
+Waiting:        0    0   0.4      0     119
+Total:          0    0   2.1      0    1026
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%   1026 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2
+Time taken for tests:   124.282 seconds
+Complete requests:      1000000
+Failed requests:        29405
+   (Connect: 0, Receive: 9801, Length: 9803, Exceptions: 9801)
+Keep-Alive requests:    980395
+Total transferred:      184127632 bytes
+HTML transferred:       20794137 bytes
+Requests per second:    8046.20 [#/sec] (mean)
+Time per request:       0.249 [ms] (mean)
+Time per request:       0.124 [ms] (mean, across all concurrent requests)
+Transfer rate:          1446.81 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.5      0    1032
+Processing:     0    0   1.2      0     254
+Waiting:        0    0   1.2      0     254
+Total:          0    0   1.9      0    1036
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%   1036 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2
+Time taken for tests:   115.885 seconds
+Complete requests:      1000000
+Failed requests:        54643
+   (Connect: 0, Receive: 18213, Length: 18217, Exceptions: 18213)
+Keep-Alive requests:    972066
+Total transferred:      182563053 bytes
+HTML transferred:       20617443 bytes
+Requests per second:    8629.28 [#/sec] (mean)
+Time per request:       0.232 [ms] (mean)
+Time per request:       0.116 [ms] (mean, across all concurrent requests)
+Transfer rate:          1538.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   2.0      0    1013
+Processing:     0    0   0.6      0     317
+Waiting:        0    0   0.4      0      67
+Total:          0    0   2.1      0    1020
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%   1020 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2
+Time taken for tests:   111.772 seconds
+Complete requests:      1000000
+Failed requests:        27416
+   (Connect: 0, Receive: 9138, Length: 9140, Exceptions: 9138)
+Keep-Alive requests:    981052
+Total transferred:      184250920 bytes
+HTML transferred:       20808060 bytes
+Requests per second:    8946.81 [#/sec] (mean)
+Time per request:       0.224 [ms] (mean)
+Time per request:       0.112 [ms] (mean, across all concurrent requests)
+Transfer rate:          1609.82 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.4      0    1018
+Processing:     0    0   0.2      0     146
+Waiting:        0    0   0.1      0      28
+Total:          0    0   1.5      0    1025
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%   1025 (longest request)
+4 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4
+Time taken for tests:   111.731 seconds
+Complete requests:      1000000
+Failed requests:        29368
+   (Connect: 0, Receive: 9788, Length: 9792, Exceptions: 9788)
+Keep-Alive requests:    980408
+Total transferred:      184129688 bytes
+HTML transferred:       20794368 bytes
+Requests per second:    8950.03 [#/sec] (mean)
+Time per request:       0.447 [ms] (mean)
+Time per request:       0.112 [ms] (mean, across all concurrent requests)
+Transfer rate:          1609.34 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   2.0      0    1007
+Processing:     0    0   1.4      0      95
+Waiting:        0    0   1.4      0      95
+Total:          0    0   2.5      0    1015
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      1
+  99%      1
+ 100%   1015 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4
+Time taken for tests:   107.220 seconds
+Complete requests:      1000000
+Failed requests:        26023
+   (Connect: 0, Receive: 8673, Length: 8677, Exceptions: 8673)
+Keep-Alive requests:    981512
+Total transferred:      184337023 bytes
+HTML transferred:       20817783 bytes
+Requests per second:    9326.59 [#/sec] (mean)
+Time per request:       0.429 [ms] (mean)
+Time per request:       0.107 [ms] (mean, across all concurrent requests)
+Transfer rate:          1678.94 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   2.0      0    1005
+Processing:     0    0   0.9      0     268
+Waiting:        0    0   0.8      0     268
+Total:          0    0   2.2      0    1008
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      1
+  99%      1
+ 100%   1008 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4
+Time taken for tests:   102.539 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990101
+Total transferred:      185950505 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    9752.38 [#/sec] (mean)
+Time per request:       0.410 [ms] (mean)
+Time per request:       0.103 [ms] (mean, across all concurrent requests)
+Transfer rate:          1770.96 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     0    0   0.1      0      19
+Waiting:        0    0   0.1      0      19
+Total:          0    0   0.1      0      19
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      1
+  99%      1
+ 100%     19 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4
+Time taken for tests:   108.720 seconds
+Complete requests:      1000000
+Failed requests:        26548
+   (Connect: 0, Receive: 8849, Length: 8850, Exceptions: 8849)
+Keep-Alive requests:    981341
+Total transferred:      184304855 bytes
+HTML transferred:       20814150 bytes
+Requests per second:    9197.97 [#/sec] (mean)
+Time per request:       0.435 [ms] (mean)
+Time per request:       0.109 [ms] (mean, across all concurrent requests)
+Transfer rate:          1655.50 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   2.0      0    1018
+Processing:     0    0   0.8      0     226
+Waiting:        0    0   0.7      0     226
+Total:          0    0   2.2      0    1022
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      1
+  98%      1
+  99%      1
+ 100%   1022 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4
+Time taken for tests:   102.681 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990101
+Total transferred:      185950505 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    9738.89 [#/sec] (mean)
+Time per request:       0.411 [ms] (mean)
+Time per request:       0.103 [ms] (mean, across all concurrent requests)
+Transfer rate:          1768.51 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     0    0   0.1      0      37
+Waiting:        0    0   0.1      0      37
+Total:          0    0   0.1      0      37
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      1
+  99%      1
+ 100%     37 (longest request)
+8 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      8
+Time taken for tests:   91.626 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990104
+Total transferred:      185950520 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10913.91 [#/sec] (mean)
+Time per request:       0.733 [ms] (mean)
+Time per request:       0.092 [ms] (mean, across all concurrent requests)
+Transfer rate:          1981.88 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       2
+Processing:     0    1   0.3      1      35
+Waiting:        0    1   0.3      1      35
+Total:          0    1   0.3      1      35
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%     35 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      8
+Time taken for tests:   91.897 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990104
+Total transferred:      185950520 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10881.76 [#/sec] (mean)
+Time per request:       0.735 [ms] (mean)
+Time per request:       0.092 [ms] (mean, across all concurrent requests)
+Transfer rate:          1976.04 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       3
+Processing:     0    1   0.2      1      21
+Waiting:        0    1   0.2      1      21
+Total:          0    1   0.2      1      21
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%     21 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      8
+Time taken for tests:   92.633 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990103
+Total transferred:      185950515 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10795.27 [#/sec] (mean)
+Time per request:       0.741 [ms] (mean)
+Time per request:       0.093 [ms] (mean, across all concurrent requests)
+Transfer rate:          1960.34 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       5
+Processing:     0    1   0.3      1      26
+Waiting:        0    1   0.3      1      26
+Total:          0    1   0.3      1      26
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%     26 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      8
+Time taken for tests:   100.288 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990104
+Total transferred:      185950520 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    9971.32 [#/sec] (mean)
+Time per request:       0.802 [ms] (mean)
+Time per request:       0.100 [ms] (mean, across all concurrent requests)
+Transfer rate:          1810.72 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       3
+Processing:     0    1   0.8      1     160
+Waiting:        0    1   0.8      1     160
+Total:          0    1   0.8      1     160
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      2
+ 100%    160 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      8
+Time taken for tests:   97.895 seconds
+Complete requests:      1000000
+Failed requests:        25151
+   (Connect: 0, Receive: 8382, Length: 8387, Exceptions: 8382)
+Keep-Alive requests:    981804
+Total transferred:      184390973 bytes
+HTML transferred:       20823873 bytes
+Requests per second:    10215.00 [#/sec] (mean)
+Time per request:       0.783 [ms] (mean)
+Time per request:       0.098 [ms] (mean, across all concurrent requests)
+Transfer rate:          1839.41 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   2.9      0    1024
+Processing:     0    1   0.9      1     163
+Waiting:        0    1   0.8      1     163
+Total:          0    1   3.0      1    1030
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%   1030 (longest request)
+16 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      16
+Time taken for tests:   86.276 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11590.77 [#/sec] (mean)
+Time per request:       1.380 [ms] (mean)
+Time per request:       0.086 [ms] (mean, across all concurrent requests)
+Transfer rate:          2104.80 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       3
+Processing:     0    1   0.3      1      52
+Waiting:        0    1   0.3      1      52
+Total:          0    1   0.3      1      52
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%     52 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      16
+Time taken for tests:   90.875 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11004.16 [#/sec] (mean)
+Time per request:       1.454 [ms] (mean)
+Time per request:       0.091 [ms] (mean, across all concurrent requests)
+Transfer rate:          1998.27 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       5
+Processing:     0    1   0.3      1      31
+Waiting:        0    1   0.3      1      31
+Total:          0    1   0.3      1      31
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%     31 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      16
+Time taken for tests:   90.429 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11058.41 [#/sec] (mean)
+Time per request:       1.447 [ms] (mean)
+Time per request:       0.090 [ms] (mean, across all concurrent requests)
+Transfer rate:          2008.12 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       4
+Processing:     0    1   0.3      1      32
+Waiting:        0    1   0.3      1      32
+Total:          0    1   0.3      1      32
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%     32 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      16
+Time taken for tests:   90.010 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990111
+Total transferred:      185950555 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11109.92 [#/sec] (mean)
+Time per request:       1.440 [ms] (mean)
+Time per request:       0.090 [ms] (mean, across all concurrent requests)
+Transfer rate:          2017.48 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       1
+Processing:     0    1   0.3      1      27
+Waiting:        0    1   0.3      1      27
+Total:          0    1   0.3      1      27
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%     27 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      16
+Time taken for tests:   90.015 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11109.23 [#/sec] (mean)
+Time per request:       1.440 [ms] (mean)
+Time per request:       0.090 [ms] (mean, across all concurrent requests)
+Transfer rate:          2017.35 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       2
+Processing:     0    1   0.2      1      23
+Waiting:        0    1   0.2      1      23
+Total:          0    1   0.2      1      23
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%     23 (longest request)
+32 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      32
+Time taken for tests:   81.453 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    12276.98 [#/sec] (mean)
+Time per request:       2.607 [ms] (mean)
+Time per request:       0.081 [ms] (mean, across all concurrent requests)
+Transfer rate:          2229.40 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       5
+Processing:     1    3   0.4      3      40
+Waiting:        0    3   0.4      3      40
+Total:          1    3   0.4      3      40
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      4
+ 100%     40 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      32
+Time taken for tests:   84.348 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11855.67 [#/sec] (mean)
+Time per request:       2.699 [ms] (mean)
+Time per request:       0.084 [ms] (mean, across all concurrent requests)
+Transfer rate:          2152.90 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       6
+Processing:     1    3   0.5      3      42
+Waiting:        1    3   0.5      3      42
+Total:          1    3   0.5      3      42
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      4
+ 100%     42 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      32
+Time taken for tests:   82.640 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    12100.65 [#/sec] (mean)
+Time per request:       2.644 [ms] (mean)
+Time per request:       0.083 [ms] (mean, across all concurrent requests)
+Transfer rate:          2197.39 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       3
+Processing:     1    3   0.3      3      33
+Waiting:        1    3   0.3      3      33
+Total:          1    3   0.3      3      33
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      3
+ 100%     33 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      32
+Time taken for tests:   84.367 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11852.98 [#/sec] (mean)
+Time per request:       2.700 [ms] (mean)
+Time per request:       0.084 [ms] (mean, across all concurrent requests)
+Transfer rate:          2152.41 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       4
+Processing:     1    3   0.4      3      26
+Waiting:        1    3   0.4      3      26
+Total:          1    3   0.4      3      26
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      4
+ 100%     26 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      32
+Time taken for tests:   81.218 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990112
+Total transferred:      185950560 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    12312.49 [#/sec] (mean)
+Time per request:       2.599 [ms] (mean)
+Time per request:       0.081 [ms] (mean, across all concurrent requests)
+Transfer rate:          2235.85 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       4
+Processing:     1    3   0.4      3      28
+Waiting:        0    3   0.4      3      28
+Total:          1    3   0.4      3      28
+
+Percentage of the requests served within a certain time (ms)
+  50%      3
+  66%      3
+  75%      3
+  80%      3
+  90%      3
+  95%      3
+  98%      3
+  99%      3
+ 100%     28 (longest request)
+64 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      64
+Time taken for tests:   81.903 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    12209.61 [#/sec] (mean)
+Time per request:       5.242 [ms] (mean)
+Time per request:       0.082 [ms] (mean, across all concurrent requests)
+Transfer rate:          2217.17 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       3
+Processing:     1    5   0.5      5      37
+Waiting:        0    5   0.5      5      37
+Total:          1    5   0.5      5      37
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      5
+  75%      5
+  80%      6
+  90%      6
+  95%      6
+  98%      6
+  99%      7
+ 100%     37 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      64
+Time taken for tests:   80.992 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    12346.90 [#/sec] (mean)
+Time per request:       5.183 [ms] (mean)
+Time per request:       0.081 [ms] (mean, across all concurrent requests)
+Transfer rate:          2242.10 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       4
+Processing:     1    5   0.6      5      35
+Waiting:        0    5   0.6      5      35
+Total:          1    5   0.6      5      35
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      5
+  75%      5
+  80%      5
+  90%      6
+  95%      6
+  98%      6
+  99%      8
+ 100%     35 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      64
+Time taken for tests:   82.650 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    12099.16 [#/sec] (mean)
+Time per request:       5.290 [ms] (mean)
+Time per request:       0.083 [ms] (mean, across all concurrent requests)
+Transfer rate:          2197.12 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       9
+Processing:     1    5   0.6      5      23
+Waiting:        0    5   0.6      5      23
+Total:          1    5   0.6      5      23
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      5
+  75%      6
+  80%      6
+  90%      6
+  95%      6
+  98%      6
+  99%      7
+ 100%     23 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      64
+Time taken for tests:   81.173 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    12319.39 [#/sec] (mean)
+Time per request:       5.195 [ms] (mean)
+Time per request:       0.081 [ms] (mean, across all concurrent requests)
+Transfer rate:          2237.11 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       4
+Processing:     1    5   0.6      5      26
+Waiting:        0    5   0.6      5      26
+Total:          1    5   0.6      5      26
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      5
+  75%      5
+  80%      5
+  90%      6
+  95%      6
+  98%      6
+  99%      8
+ 100%     26 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      64
+Time taken for tests:   78.423 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    12751.28 [#/sec] (mean)
+Time per request:       5.019 [ms] (mean)
+Time per request:       0.078 [ms] (mean, across all concurrent requests)
+Transfer rate:          2315.54 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       4
+Processing:     1    5   0.6      5      33
+Waiting:        1    5   0.6      5      33
+Total:          1    5   0.6      5      33
+
+Percentage of the requests served within a certain time (ms)
+  50%      5
+  66%      5
+  75%      5
+  80%      5
+  90%      5
+  95%      6
+  98%      6
+  99%      7
+ 100%     33 (longest request)
+128 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      128
+Time taken for tests:   85.288 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11725.01 [#/sec] (mean)
+Time per request:       10.917 [ms] (mean)
+Time per request:       0.085 [ms] (mean, across all concurrent requests)
+Transfer rate:          2129.17 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       8
+Processing:     2   11   1.1     11      52
+Waiting:        0   11   1.1     11      52
+Total:          2   11   1.1     11      52
+
+Percentage of the requests served within a certain time (ms)
+  50%     11
+  66%     11
+  75%     11
+  80%     11
+  90%     12
+  95%     12
+  98%     14
+  99%     15
+ 100%     52 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      128
+Time taken for tests:   85.376 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11712.88 [#/sec] (mean)
+Time per request:       10.928 [ms] (mean)
+Time per request:       0.085 [ms] (mean, across all concurrent requests)
+Transfer rate:          2126.97 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0      11
+Processing:     2   11   1.0     11      50
+Waiting:        0   11   1.0     11      50
+Total:          2   11   1.0     11      50
+
+Percentage of the requests served within a certain time (ms)
+  50%     11
+  66%     11
+  75%     11
+  80%     12
+  90%     12
+  95%     12
+  98%     13
+  99%     15
+ 100%     50 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      128
+Time taken for tests:   84.701 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11806.23 [#/sec] (mean)
+Time per request:       10.842 [ms] (mean)
+Time per request:       0.085 [ms] (mean, across all concurrent requests)
+Transfer rate:          2143.92 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0       8
+Processing:     2   11   1.0     11      43
+Waiting:        0   11   1.0     11      43
+Total:          2   11   1.0     11      43
+
+Percentage of the requests served within a certain time (ms)
+  50%     11
+  66%     11
+  75%     11
+  80%     11
+  90%     12
+  95%     12
+  98%     13
+  99%     14
+ 100%     43 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      128
+Time taken for tests:   88.182 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11340.24 [#/sec] (mean)
+Time per request:       11.287 [ms] (mean)
+Time per request:       0.088 [ms] (mean, across all concurrent requests)
+Transfer rate:          2059.30 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.2      0      10
+Processing:     2   11   1.1     11      37
+Waiting:        0   11   1.1     11      37
+Total:          2   11   1.1     11      37
+
+Percentage of the requests served within a certain time (ms)
+  50%     11
+  66%     12
+  75%     12
+  80%     12
+  90%     12
+  95%     13
+  98%     14
+  99%     15
+ 100%     37 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      128
+Time taken for tests:   85.480 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990144
+Total transferred:      185950720 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11698.65 [#/sec] (mean)
+Time per request:       10.941 [ms] (mean)
+Time per request:       0.085 [ms] (mean, across all concurrent requests)
+Transfer rate:          2124.39 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       7
+Processing:     2   11   1.1     11      35
+Waiting:        0   11   1.1     11      35
+Total:          2   11   1.1     11      35
+
+Percentage of the requests served within a certain time (ms)
+  50%     11
+  66%     11
+  75%     11
+  80%     11
+  90%     12
+  95%     12
+  98%     14
+  99%     15
+ 100%     35 (longest request)
+256 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      256
+Time taken for tests:   90.894 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11001.83 [#/sec] (mean)
+Time per request:       23.269 [ms] (mean)
+Time per request:       0.091 [ms] (mean, across all concurrent requests)
+Transfer rate:          1997.86 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.6      0      19
+Processing:     3   23   3.4     23      72
+Waiting:        0   23   3.4     23      72
+Total:          3   23   3.4     23      72
+
+Percentage of the requests served within a certain time (ms)
+  50%     23
+  66%     24
+  75%     25
+  80%     25
+  90%     27
+  95%     28
+  98%     31
+  99%     33
+ 100%     72 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      256
+Time taken for tests:   87.308 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11453.75 [#/sec] (mean)
+Time per request:       22.351 [ms] (mean)
+Time per request:       0.087 [ms] (mean, across all concurrent requests)
+Transfer rate:          2079.92 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.6      0      27
+Processing:     3   22   3.2     22      64
+Waiting:        0   22   3.2     22      64
+Total:          3   22   3.2     22      64
+
+Percentage of the requests served within a certain time (ms)
+  50%     22
+  66%     23
+  75%     24
+  80%     24
+  90%     25
+  95%     27
+  98%     30
+  99%     31
+ 100%     64 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      256
+Time taken for tests:   88.366 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11316.62 [#/sec] (mean)
+Time per request:       22.622 [ms] (mean)
+Time per request:       0.088 [ms] (mean, across all concurrent requests)
+Transfer rate:          2055.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.6      0      19
+Processing:     3   23   3.2     23      50
+Waiting:        0   23   3.2     23      50
+Total:          4   23   3.1     23      50
+
+Percentage of the requests served within a certain time (ms)
+  50%     23
+  66%     23
+  75%     24
+  80%     24
+  90%     26
+  95%     27
+  98%     30
+  99%     31
+ 100%     50 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      256
+Time taken for tests:   92.886 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10765.90 [#/sec] (mean)
+Time per request:       23.779 [ms] (mean)
+Time per request:       0.093 [ms] (mean, across all concurrent requests)
+Transfer rate:          1955.01 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.6      0      20
+Processing:     4   24   3.4     24      69
+Waiting:        1   24   3.4     24      69
+Total:          4   24   3.4     24      69
+
+Percentage of the requests served within a certain time (ms)
+  50%     24
+  66%     24
+  75%     25
+  80%     25
+  90%     27
+  95%     28
+  98%     32
+  99%     35
+ 100%     69 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      256
+Time taken for tests:   92.392 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10823.40 [#/sec] (mean)
+Time per request:       23.652 [ms] (mean)
+Time per request:       0.092 [ms] (mean, across all concurrent requests)
+Transfer rate:          1965.46 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.6      0      27
+Processing:     3   24   3.9     24      62
+Waiting:        0   24   3.9     24      62
+Total:          3   24   3.9     24      62
+
+Percentage of the requests served within a certain time (ms)
+  50%     24
+  66%     25
+  75%     25
+  80%     26
+  90%     27
+  95%     29
+  98%     32
+  99%     35
+ 100%     62 (longest request)
+512 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   92.259 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10839.02 [#/sec] (mean)
+Time per request:       47.237 [ms] (mean)
+Time per request:       0.092 [ms] (mean, across all concurrent requests)
+Transfer rate:          1968.29 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.1      0      25
+Processing:     7   47   9.3     51     127
+Waiting:        0   47   9.3     51     127
+Total:          8   47   9.2     51     127
+
+Percentage of the requests served within a certain time (ms)
+  50%     51
+  66%     54
+  75%     55
+  80%     55
+  90%     57
+  95%     59
+  98%     61
+  99%     63
+ 100%    127 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   86.968 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11498.55 [#/sec] (mean)
+Time per request:       44.527 [ms] (mean)
+Time per request:       0.087 [ms] (mean, across all concurrent requests)
+Transfer rate:          2088.06 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.1      0      23
+Processing:     6   44   8.4     49      94
+Waiting:        1   44   8.4     49      94
+Total:          7   45   8.3     49      94
+
+Percentage of the requests served within a certain time (ms)
+  50%     49
+  66%     51
+  75%     51
+  80%     52
+  90%     53
+  95%     55
+  98%     57
+  99%     59
+ 100%     94 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   87.271 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11458.50 [#/sec] (mean)
+Time per request:       44.683 [ms] (mean)
+Time per request:       0.087 [ms] (mean, across all concurrent requests)
+Transfer rate:          2080.78 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.1      0      24
+Processing:     6   45   8.6     49     280
+Waiting:        0   45   8.6     49     280
+Total:          6   45   8.5     49     280
+
+Percentage of the requests served within a certain time (ms)
+  50%     49
+  66%     51
+  75%     52
+  80%     52
+  90%     53
+  95%     55
+  98%     57
+  99%     60
+ 100%    280 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   86.701 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11533.85 [#/sec] (mean)
+Time per request:       44.391 [ms] (mean)
+Time per request:       0.087 [ms] (mean, across all concurrent requests)
+Transfer rate:          2094.47 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0      21
+Processing:     6   44   8.4     48      86
+Waiting:        0   44   8.4     48      86
+Total:          6   44   8.3     48      86
+
+Percentage of the requests served within a certain time (ms)
+  50%     48
+  66%     50
+  75%     51
+  80%     52
+  90%     53
+  95%     55
+  98%     57
+  99%     59
+ 100%     86 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   85.701 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11668.41 [#/sec] (mean)
+Time per request:       43.879 [ms] (mean)
+Time per request:       0.086 [ms] (mean, across all concurrent requests)
+Transfer rate:          2118.90 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0      35
+Processing:     8   44   8.2     48      86
+Waiting:        3   44   8.2     48      86
+Total:          8   44   8.1     48      86
+
+Percentage of the requests served within a certain time (ms)
+  50%     48
+  66%     50
+  75%     51
+  80%     51
+  90%     52
+  95%     54
+  98%     56
+  99%     57
+ 100%     86 (longest request)
+512 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   88.238 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11332.94 [#/sec] (mean)
+Time per request:       45.178 [ms] (mean)
+Time per request:       0.088 [ms] (mean, across all concurrent requests)
+Transfer rate:          2057.98 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.1      0      36
+Processing:     6   45   8.9     48     269
+Waiting:        0   45   8.9     48     269
+Total:          6   45   8.8     48     269
+
+Percentage of the requests served within a certain time (ms)
+  50%     48
+  66%     51
+  75%     52
+  80%     53
+  90%     55
+  95%     56
+  98%     58
+  99%     59
+ 100%    269 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   84.393 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11849.38 [#/sec] (mean)
+Time per request:       43.209 [ms] (mean)
+Time per request:       0.084 [ms] (mean, across all concurrent requests)
+Transfer rate:          2151.77 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0      22
+Processing:     5   43   8.2     47     271
+Waiting:        1   43   8.2     47     271
+Total:          6   43   8.1     47     271
+
+Percentage of the requests served within a certain time (ms)
+  50%     47
+  66%     49
+  75%     50
+  80%     50
+  90%     52
+  95%     53
+  98%     55
+  99%     58
+ 100%    271 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   83.448 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11983.45 [#/sec] (mean)
+Time per request:       42.726 [ms] (mean)
+Time per request:       0.083 [ms] (mean, across all concurrent requests)
+Transfer rate:          2176.11 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.0      0      21
+Processing:     5   43   8.7     47     275
+Waiting:        1   43   8.7     47     275
+Total:          5   43   8.6     47     275
+
+Percentage of the requests served within a certain time (ms)
+  50%     47
+  66%     48
+  75%     49
+  80%     50
+  90%     51
+  95%     52
+  98%     54
+  99%     56
+ 100%    275 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   93.701 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10672.22 [#/sec] (mean)
+Time per request:       47.975 [ms] (mean)
+Time per request:       0.094 [ms] (mean, across all concurrent requests)
+Transfer rate:          1938.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.1      0      24
+Processing:     7   48  10.1     52     277
+Waiting:        1   48  10.1     52     277
+Total:          7   48  10.0     52     277
+
+Percentage of the requests served within a certain time (ms)
+  50%     52
+  66%     54
+  75%     55
+  80%     55
+  90%     57
+  95%     59
+  98%     64
+  99%     73
+ 100%    277 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      512
+Time taken for tests:   91.244 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990272
+Total transferred:      185951360 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10959.61 [#/sec] (mean)
+Time per request:       46.717 [ms] (mean)
+Time per request:       0.091 [ms] (mean, across all concurrent requests)
+Transfer rate:          1990.19 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   1.1      0      36
+Processing:     5   47   9.1     51     277
+Waiting:        0   47   9.1     51     277
+Total:          5   47   8.9     51     277
+
+Percentage of the requests served within a certain time (ms)
+  50%     51
+  66%     53
+  75%     54
+  80%     54
+  90%     56
+  95%     57
+  98%     60
+  99%     62
+ 100%    277 (longest request)
+1024 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1024
+Time taken for tests:   86.309 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990784
+Total transferred:      185953920 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11586.28 [#/sec] (mean)
+Time per request:       88.380 [ms] (mean)
+Time per request:       0.086 [ms] (mean, across all concurrent requests)
+Transfer rate:          2104.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   4.2      0    1016
+Processing:    12   88   6.5     86     313
+Waiting:        0   88   6.5     86     313
+Total:         13   88   7.7     86    1091
+
+Percentage of the requests served within a certain time (ms)
+  50%     86
+  66%     88
+  75%     89
+  80%     90
+  90%    100
+  95%    102
+  98%    105
+  99%    108
+ 100%   1091 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1024
+Time taken for tests:   90.711 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990784
+Total transferred:      185953920 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11024.05 [#/sec] (mean)
+Time per request:       92.888 [ms] (mean)
+Time per request:       0.091 [ms] (mean, across all concurrent requests)
+Transfer rate:          2001.92 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   9.3      0    1035
+Processing:    10   93   7.1     91     336
+Waiting:        1   93   7.1     91     336
+Total:         11   93  11.6     91    1135
+
+Percentage of the requests served within a certain time (ms)
+  50%     91
+  66%     92
+  75%     94
+  80%     95
+  90%    105
+  95%    108
+  98%    111
+  99%    114
+ 100%   1135 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1024
+Time taken for tests:   92.991 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990784
+Total transferred:      185953920 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10753.71 [#/sec] (mean)
+Time per request:       95.223 [ms] (mean)
+Time per request:       0.093 [ms] (mean, across all concurrent requests)
+Transfer rate:          1952.83 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   9.5      0    1034
+Processing:    10   95   7.0     93     159
+Waiting:        0   95   7.0     93     159
+Total:         10   95  11.6     93    1119
+
+Percentage of the requests served within a certain time (ms)
+  50%     93
+  66%     94
+  75%     96
+  80%     98
+  90%    107
+  95%    110
+  98%    114
+  99%    117
+ 100%   1119 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1024
+Time taken for tests:   90.636 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990784
+Total transferred:      185953920 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11033.18 [#/sec] (mean)
+Time per request:       92.811 [ms] (mean)
+Time per request:       0.091 [ms] (mean, across all concurrent requests)
+Transfer rate:          2003.58 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   9.6      0    1035
+Processing:     9   93   7.6     91     344
+Waiting:        1   93   7.6     91     344
+Total:         10   93  12.0     91    1116
+
+Percentage of the requests served within a certain time (ms)
+  50%     91
+  66%     93
+  75%     95
+  80%     96
+  90%    104
+  95%    108
+  98%    112
+  99%    115
+ 100%   1116 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      1024
+Time taken for tests:   87.153 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    990784
+Total transferred:      185953920 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11474.03 [#/sec] (mean)
+Time per request:       89.245 [ms] (mean)
+Time per request:       0.087 [ms] (mean, across all concurrent requests)
+Transfer rate:          2083.63 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   9.4      0    1032
+Processing:    11   89   6.3     87     321
+Waiting:        0   89   6.3     87     321
+Total:         11   89  11.1     87    1111
+
+Percentage of the requests served within a certain time (ms)
+  50%     87
+  66%     88
+  75%     90
+  80%     91
+  90%    101
+  95%    103
+  98%    106
+  99%    108
+ 100%   1111 (longest request)
+2048 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2048
+Time taken for tests:   90.627 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11034.26 [#/sec] (mean)
+Time per request:       185.604 [ms] (mean)
+Time per request:       0.091 [ms] (mean, across all concurrent requests)
+Transfer rate:          2003.83 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0  16.1      0    1053
+Processing:     6  185  11.3    181     427
+Waiting:        0  185  11.3    181     427
+Total:         22  185  19.6    182    1236
+
+Percentage of the requests served within a certain time (ms)
+  50%    182
+  66%    188
+  75%    192
+  80%    194
+  90%    199
+  95%    203
+  98%    212
+  99%    218
+ 100%   1236 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2048
+Time taken for tests:   91.616 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10915.15 [#/sec] (mean)
+Time per request:       187.629 [ms] (mean)
+Time per request:       0.092 [ms] (mean, across all concurrent requests)
+Transfer rate:          1982.20 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1  22.2      0    1041
+Processing:    10  187  13.5    187     436
+Waiting:        0  187  13.5    187     436
+Total:         21  187  25.7    187    1254
+
+Percentage of the requests served within a certain time (ms)
+  50%    187
+  66%    191
+  75%    193
+  80%    195
+  90%    204
+  95%    208
+  98%    212
+  99%    217
+ 100%   1254 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2048
+Time taken for tests:   92.666 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10791.46 [#/sec] (mean)
+Time per request:       189.780 [ms] (mean)
+Time per request:       0.093 [ms] (mean, across all concurrent requests)
+Transfer rate:          1959.74 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1  21.6      0    1047
+Processing:    11  189  14.4    189     424
+Waiting:        0  189  14.4    189     424
+Total:         22  190  25.7    189    1240
+
+Percentage of the requests served within a certain time (ms)
+  50%    189
+  66%    192
+  75%    195
+  80%    197
+  90%    206
+  95%    209
+  98%    215
+  99%    222
+ 100%   1240 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2048
+Time taken for tests:   92.667 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10791.37 [#/sec] (mean)
+Time per request:       189.781 [ms] (mean)
+Time per request:       0.093 [ms] (mean, across all concurrent requests)
+Transfer rate:          1959.72 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1  21.2      0    1033
+Processing:    12  189  14.4    189     430
+Waiting:        1  189  14.4    189     430
+Total:         19  190  25.7    189    1246
+
+Percentage of the requests served within a certain time (ms)
+  50%    189
+  66%    192
+  75%    194
+  80%    197
+  90%    206
+  95%    209
+  98%    214
+  99%    220
+ 100%   1246 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      2048
+Time taken for tests:   89.562 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    11165.45 [#/sec] (mean)
+Time per request:       183.423 [ms] (mean)
+Time per request:       0.090 [ms] (mean, across all concurrent requests)
+Transfer rate:          2027.65 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1  22.4      0    3030
+Processing:    10  183  12.7    180     385
+Waiting:        0  183  12.7    180     385
+Total:         20  183  25.7    180    3201
+
+Percentage of the requests served within a certain time (ms)
+  50%    180
+  66%    184
+  75%    190
+  80%    192
+  90%    196
+  95%    200
+  98%    208
+  99%    215
+ 100%   3201 (longest request)
+4096 concurrent
+interation: 1
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4096
+Time taken for tests:   106.547 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    9385.57 [#/sec] (mean)
+Time per request:       436.415 [ms] (mean)
+Time per request:       0.107 [ms] (mean, across all concurrent requests)
+Transfer rate:          1704.43 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2  62.3      0    3051
+Processing:     9  433  47.6    431     756
+Waiting:        0  433  47.6    431     756
+Total:         45  436  78.2    431    3513
+
+Percentage of the requests served within a certain time (ms)
+  50%    431
+  66%    443
+  75%    450
+  80%    455
+  90%    470
+  95%    487
+  98%    526
+  99%    682
+ 100%   3513 (longest request)
+interation: 2
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4096
+Time taken for tests:   92.126 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10854.71 [#/sec] (mean)
+Time per request:       377.348 [ms] (mean)
+Time per request:       0.092 [ms] (mean, across all concurrent requests)
+Transfer rate:          1971.22 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    2  60.4      0    3055
+Processing:     8  374  25.0    376     618
+Waiting:        1  374  25.0    376     618
+Total:         42  377  64.6    376    3441
+
+Percentage of the requests served within a certain time (ms)
+  50%    376
+  66%    381
+  75%    384
+  80%    385
+  90%    392
+  95%    403
+  98%    419
+  99%    431
+ 100%   3441 (longest request)
+interation: 3
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4096
+Time taken for tests:   92.951 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10758.32 [#/sec] (mean)
+Time per request:       380.729 [ms] (mean)
+Time per request:       0.093 [ms] (mean, across all concurrent requests)
+Transfer rate:          1953.72 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3  86.6      0    3058
+Processing:     8  377  27.2    379     633
+Waiting:        1  377  27.2    379     633
+Total:         40  380  91.1    379    3489
+
+Percentage of the requests served within a certain time (ms)
+  50%    379
+  66%    384
+  75%    387
+  80%    389
+  90%    400
+  95%    407
+  98%    416
+  99%    428
+ 100%   3489 (longest request)
+interation: 4
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4096
+Time taken for tests:   97.550 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10251.15 [#/sec] (mean)
+Time per request:       399.565 [ms] (mean)
+Time per request:       0.098 [ms] (mean, across all concurrent requests)
+Transfer rate:          1861.62 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    3  74.3      0    3064
+Processing:    10  396  27.5    399     625
+Waiting:        1  396  27.5    399     625
+Total:         45  399  79.3    399    3479
+
+Percentage of the requests served within a certain time (ms)
+  50%    399
+  66%    404
+  75%    407
+  80%    409
+  90%    413
+  95%    420
+  98%    430
+  99%    442
+ 100%   3479 (longest request)
+interation: 5
+This is ApacheBench, Version 2.3 <$Revision: 1843412 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.1.0.9 (be patient)
+
+
+Server Software:        lighttpd/1.4.53
+Server Hostname:        10.1.0.9
+Server Port:            80
+
+Document Path:          /php/date.php
+Document Length:        21 bytes
+
+Concurrency Level:      4096
+Time taken for tests:   96.638 seconds
+Complete requests:      1000000
+Failed requests:        0
+Keep-Alive requests:    991808
+Total transferred:      185959040 bytes
+HTML transferred:       21000000 bytes
+Requests per second:    10347.95 [#/sec] (mean)
+Time per request:       395.827 [ms] (mean)
+Time per request:       0.097 [ms] (mean, across all concurrent requests)
+Transfer rate:          1879.19 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    4 107.4      0    7100
+Processing:     5  391  38.1    390     647
+Waiting:        0  391  38.1    390     647
+Total:         36  395 114.8    390    7495
+
+Percentage of the requests served within a certain time (ms)
+  50%    390
+  66%    399
+  75%    404
+  80%    408
+  90%    426
+  95%    442
+  98%    471
+  99%    492
+ 100%   7495 (longest request)
